@@ -1,0 +1,2408 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    127270,       2400]
+NotebookOptionsPosition[    125856,       2351]
+NotebookOutlinePosition[    126234,       2367]
+CellTagsIndexPosition[    126191,       2364]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{"a", " ", "=", " ", 
+    RowBox[{
+    "Import", "[", 
+     "\"\<http://www.foxnews.com/transcript/2016/11/09/dissecting-donald-\
+trump-win-over-hillary-clinton.html\>\"", "]"}]}], "*)"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7027190433235245`*^9, 3.702719068101657*^9}, {
+   3.7027210843252096`*^9, 3.702721139279108*^9}, 3.702721269889207*^9, 
+   3.7027214227965364`*^9, {3.702998236759595*^9, 3.7029982452046156`*^9}, {
+   3.702998281904125*^9, 3.702998290882951*^9}, 3.703167525322141*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", " ", "=", 
+  RowBox[{
+  "{", "\"\<\\nPRESIDENT-ELECT DONALD TRUMP: Those who have chosen not \
+to\\nsupport me in the past -- of which there were a few people -- I'm \
+reaching\\nout to you for your guidance and your help so that we can work \
+together and\\nunify our great country. Working together, we will begin the \
+urgent task\\nof rebuilding our nation and renewing the American dream. \
+\\nHILLARY CLINTON, DEMOCRATIC PRESIDENTIAL NOMINEE: We have seen that our \
+nation\\nis more deeply divided than we thought. But I still believe in \
+America,\\nand I always will. And if you do, then we must accept this result \
+and then\\nlook to the future. Donald Trump is going to be our president. We \
+owe him\\nan open mind and the chance to lead. \\nBRET BAIER, ANCHOR: Donald \
+Trump is the president-elect today. As we look at the map\\nof the states \
+that were called, red obviously Republican, blue Democrat.\\nAnd you see some \
+gray in there. That's because we have not called those\\nstates as of yet. \
+Here is why -- Michigan, 96 percent of the vote is in,\\nand there you see it \
+looks like Donald Trump is heading towards a win\\nthere. But again, we're \
+waiting for some other vote to come in. But it\\nlooks like we're going to be \
+able to eventually to call Michigan for Donald\\nTrump. In New Hampshire, 98 \
+percent of the vote is in. It's not a big\\nstate. I don't know why it takes \
+so long to get all these votes, but they\\nare still cooking. Senator Ayotte \
+has conceded to Maggie Hassan, the\\nDemocrat, in that Senate race, but we \
+have not called the presidential\\nrace. \\nIn Arizona, in red Arizona, 75 \
+percent is in because you have a lot of\\nmail-in ballots that have to be \
+counted. And there you see Donald Trump\\neventually will probably get \
+another win there. \\nWith that, let's bring in our panel: Jonah Goldberg, \
+senior editor of National Review; Mercedes Schlapp, columnist for The \
+Washington Times; Mara Liasson, national political correspondent of National \
+Public Radio, and syndicated columnist Charles Krauthammer. Mara, your \
+thoughts? \\nMARA LIASSON, NATIONAL PUBLIC RADIO: Well, it was an upset for \
+the ages.\\nAs we have been saying all night long, it was incredible. \
+Everybody was\\nwrong, including Donald Trump who didn't think he was going \
+to win, but he\\ndid. And he really did bust apart the coalitions and the \
+maps for both\\nparties. I think that the Republican party now is white \
+working class\\nparty. It has got the rustbelt now as part of its base. And \
+the Democrats\\nare kind of trying to deal with their shock and figuring out \
+what went\\nwrong. In the circular firing squad department, I think they have \
+a couple\\npeople to aim at. James Comey, I hear a lot about, Anthony Weiner,\
+\\nWikiLeaks and Hillary Clinton herself who turned out to be a pretty \
+weak\\ncandidate, a lot of baggage, and a status quo candidate in a \
+change\\nelection. \\nBAIER: If you look at policies of the next president \
+should be in the exit\\npolls, same as President Obama, 28 percent, more \
+conservative, 48 percent,\\nmore liberal, 17 percent. Of those 17 percent, 22 \
+percent of them voted\\nfor Donald Trump. So that, Mercedes, is the Bernie \
+Sanders vote I would\\nassume. \\nMERCEDES SCHLAPP, THE WASHINGTON TIMES: \
+That's right. \\nBAIER: And those are probably people who did not talk to the \
+exit poll\\npeople because they said I'm not going to tell them that I'm \
+voting for\\nDonald Trump. \\nSCHLAPP: And I also think it's a trade policy \
+message they were trying to\\npush through because when you think about it, \
+Bernie Sanders, first of all,\\nran against the status quo, secondly, talked \
+about the problems with trade,\\nwith TPP, with NAFTA. That's the same \
+message that we have seen Donald\\nTrump push forward in this election. \
+\\nAnd I think it's one of the reasons why Donald Trump has just -- \
+was\\nable to do so well in the rust belt states with the white working \
+class,\\nwhere they have seen manufacturing jobs leave their communities, \
+companies\\ngo away, and the opportunity for Donald Trump to really hone in \
+on that\\neconomic trade message which at the same time worked with the \
+Bernie\\nSanders supporters. \\nBAIER: Jonah. You have never been a fan. What \
+did you think of the\\nspeech in what do you think of president-elect Donald \
+Trump? \\nJONAH GOLDBERG, NATIONAL REVIEW: Look, I've been eating a\\nlot of \
+crow, which tastes remarkably like black swan. This is a remarkable\\nthing \
+that Donald Trump did. I thought his speech was actually very good\\nand very \
+smart. And I think the never-Trump movement is by definition\\nover, because \
+he won. We lost. You have to -- particularly if you are a\\nconservative, you \
+have to give him a fresh start and give him the benefit\\nof the doubt. If \
+Hillary Clinton can do it, I can do it. \\nAnd I thought he did a very good \
+job of sending that signal. I think there\\nare a lot of pitfalls he could \
+fall into with that. I do think -- and I\\ndon't want to take anything away \
+from his victory which was really\\nimpressive. It is really important to \
+pick up on something that Mara said.\\nThis was also Hillary Clinton's \
+defeat. This was a really poor performance\\nby Hillary Clinton. Very low \
+turnout from key constituencies. You had\\nless turnout overall than did you \
+in 2004 for John Kerry. We have got\\nsomething like 40 million more people \
+on the voter rolls. The Democratic\\nParty nominated literally the worst \
+person they could for a change election\\nand they rallied around it. And she \
+was a bad candidate both in theory and\\nin practice. \\nBAIER: And what do \
+you think this means for President Obama's legacy?\\nWhat is this saying? Is \
+it a repudiation of President Obama? \\nGOLDBERG: I think it is a direct \
+outgrowth of it, and I think it's really\\nbad news for Barack Obama's \
+legacy. Barack Obama condescended from a great\\nheight upon his political \
+opponents for eight years. He had sort of an\\nOlympian disdain for anybody \
+that disagreed with more, as his party became\\nmore leftwing, more \
+dismissive of concerns of the working class, started\\ntalking opening about \
+killing things like the coal industry. And it ticked\\noff a lot of people \
+and rightly so. And Donald Trump tapped into that. \\nBAIER: You have also \
+evolved since the beginning of our panel talk of this\\nelection. \\nCHARLES \
+KRAUTHAMMER, SYNDICATED COLUMNIST: Yes. I have now reached sort\\nof a stage \
+of -- I'm halfway there. There's no question that what Donald\\nTrump did was \
+historic, amazing. And he deserves all the credit for it.\\nAs Paul Ryan \
+said, he was the only one who heard the voice out there. And\\nthat was the \
+fact that the Reagan Democrats, the old white working class\\nthat Reagan \
+corralled, had gone away and nobody was listening to that. And\\nhe tuned in \
+to that and that's how he won the election. \\nAnd I do think what's even \
+more amazing is the fact that whereas everybody\\nwas worrying on the \
+Republican side that he would damage the down ballot\\ncandidates, he \
+actually had coattails and he helped to pull some of the\\ndown ballot \
+candidates over the finish line. And I agree secondly that the\\nother person \
+responsible for this Trump triumph is Hillary, probably the\\nworst candidate \
+possibly one could imagine. \\nBut I think what's overlooked is the role that \
+Barack Obama did. Remember\\nhe said two years ago, I'm not on the ballot, \
+but my policies are, and he\\ngot shellacked. Then he said, this year my \
+legacy is on the ballot. And I\\nthink he's going to lose it. I think it's \
+going to be undone, much of it,\\nin the first 100 days starting with \
+Obamacare. Everything that he signed,\\nall the executive orders are gone. \
+And I think he ends up a historic\\nparentheses. He left the Democrats in \
+ruins at every level. The\\ngovernorships, the state houses, the House and \
+the Senate, and now the\\nWhite House. He has been a wrecking ball for \
+Democrats, and I think he\\ndeserves a lot of the credit for Trump's victory. \
+\\nBAIER: Talk about Secretary Clinton, a lot of people praising, Mara, \
+the\\nspeech today where she emoted. Obviously she talked about bringing \
+the\\ncountry together. Let's listen to her last speech like this and this \
+one. \\n(BEGIN VIDEO CLIP) \\nCLINTON: Although we weren't able to shatter \
+that highest, hardest glass\\nceiling this time, thanks to you, it got about \
+18 million cracks in it.\\nAnd the light is shining through like never \
+before, filling us all with the\\nhope and the sure knowledge that the panel \
+will be a little easier next\\ntime. \\n(APPLAUSE) \\nCLINTON: I know we have \
+still not shattered that highest and hardest glass\\nceiling. But some day \
+someone will, and hopefully sooner than we might\\nthink right now. \
+\\n(APPLAUSE) \\n(END VIDEO CLIP) \\nBAIER: Just talking to people in this \
+town, they are catatonic today. I\\nthink that's a fair word. Just \
+anecdotally heard that shopping centers\\nwere quiet. Washington, D.C. is \
+elite establishment. \\nLIASSON: It's a blue -- dark blue spot. \\nBAIER: As \
+I said, this morning heads are exploding here that they can't\\nbelieve it. \
+\\nLIASSON: I think they can't believe it for a number of reasons, not \
+just\\nthat it was a partisan ideological contest, but also that for so \
+many\\npeople, and I've heard this from Republicans who thought that Donald \
+Trump\\nwas beyond the pale and that he wasn't -- his demeanor, his disregard \
+for\\ndemocratic values and institutions, all of those things made \
+him\\nunthinkable. And I think the shock of it was also part of the reason \
+why\\nyou have got this reaction. The financial markets, the betting markets \
+-- \\nBAIER: Although they finished -- \\nLIASSON: They bounced back. They \
+predicted that she would win. They\\nbuilt that in. \\nBAIER: Finished the \
+day at the highest. Final word on this. I want to go\\nto the break. \
+\\nSCHLAPP: I have to say at the end this is a rejection of Obama's \
+legacy,\\nof his imperial presidency. I think when you look at the lack \
+of\\nenthusiasm, the fact that you saw these skyrocketing Obamacare premiums \
+as\\nwell as the distress of Hillary Clinton, it all played a role in \
+weakening\\nHillary Clinton. And it gave Trump that advantage.\>\"", "}"}]}]],\
+ "Input",
+ CellChangeTimes->{{3.7029980516241207`*^9, 3.7029981037681413`*^9}, {
+  3.7029981397210865`*^9, 3.7029981528691807`*^9}, {3.702998221960025*^9, 
+  3.702998231612341*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"\\nPRESIDENT-ELECT DONALD TRUMP: Those who have chosen not \
+to\\nsupport me in the past -- of which there were a few people -- I'm \
+reaching\\nout to you for your guidance and your help so that we can work \
+together and\\nunify our great country. Working together, we will begin the \
+urgent task\\nof rebuilding our nation and renewing the American dream. \
+\\nHILLARY CLINTON, DEMOCRATIC PRESIDENTIAL NOMINEE: We have seen that our \
+nation\\nis more deeply divided than we thought. But I still believe in \
+America,\\nand I always will. And if you do, then we must accept this result \
+and then\\nlook to the future. Donald Trump is going to be our president. We \
+owe him\\nan open mind and the chance to lead. \\nBRET BAIER, ANCHOR: Donald \
+Trump is the president-elect today. As we look at the map\\nof the states \
+that were called, red obviously Republican, blue Democrat.\\nAnd you see some \
+gray in there. That's because we have not called those\\nstates as of yet. \
+Here is why -- Michigan, 96 percent of the vote is in,\\nand there you see it \
+looks like Donald Trump is heading towards a win\\nthere. But again, we're \
+waiting for some other vote to come in. But it\\nlooks like we're going to be \
+able to eventually to call Michigan for Donald\\nTrump. In New Hampshire, 98 \
+percent of the vote is in. It's not a big\\nstate. I don't know why it takes \
+so long to get all these votes, but they\\nare still cooking. Senator Ayotte \
+has conceded to Maggie Hassan, the\\nDemocrat, in that Senate race, but we \
+have not called the presidential\\nrace. \\nIn Arizona, in red Arizona, 75 \
+percent is in because you have a lot of\\nmail-in ballots that have to be \
+counted. And there you see Donald Trump\\neventually will probably get \
+another win there. \\nWith that, let's bring in our panel: Jonah Goldberg, \
+senior editor of National Review; Mercedes Schlapp, columnist for The \
+Washington Times; Mara Liasson, national political correspondent of National \
+Public Radio, and syndicated columnist Charles Krauthammer. Mara, your \
+thoughts? \\nMARA LIASSON, NATIONAL PUBLIC RADIO: Well, it was an upset for \
+the ages.\\nAs we have been saying all night long, it was incredible. \
+Everybody was\\nwrong, including Donald Trump who didn't think he was going \
+to win, but he\\ndid. And he really did bust apart the coalitions and the \
+maps for both\\nparties. I think that the Republican party now is white \
+working class\\nparty. It has got the rustbelt now as part of its base. And \
+the Democrats\\nare kind of trying to deal with their shock and figuring out \
+what went\\nwrong. In the circular firing squad department, I think they have \
+a couple\\npeople to aim at. James Comey, I hear a lot about, Anthony Weiner,\
+\\nWikiLeaks and Hillary Clinton herself who turned out to be a pretty \
+weak\\ncandidate, a lot of baggage, and a status quo candidate in a \
+change\\nelection. \\nBAIER: If you look at policies of the next president \
+should be in the exit\\npolls, same as President Obama, 28 percent, more \
+conservative, 48 percent,\\nmore liberal, 17 percent. Of those 17 percent, 22 \
+percent of them voted\\nfor Donald Trump. So that, Mercedes, is the Bernie \
+Sanders vote I would\\nassume. \\nMERCEDES SCHLAPP, THE WASHINGTON TIMES: \
+That's right. \\nBAIER: And those are probably people who did not talk to the \
+exit poll\\npeople because they said I'm not going to tell them that I'm \
+voting for\\nDonald Trump. \\nSCHLAPP: And I also think it's a trade policy \
+message they were trying to\\npush through because when you think about it, \
+Bernie Sanders, first of all,\\nran against the status quo, secondly, talked \
+about the problems with trade,\\nwith TPP, with NAFTA. That's the same \
+message that we have seen Donald\\nTrump push forward in this election. \
+\\nAnd I think it's one of the reasons why Donald Trump has just -- \
+was\\nable to do so well in the rust belt states with the white working \
+class,\\nwhere they have seen manufacturing jobs leave their communities, \
+companies\\ngo away, and the opportunity for Donald Trump to really hone in \
+on that\\neconomic trade message which at the same time worked with the \
+Bernie\\nSanders supporters. \\nBAIER: Jonah. You have never been a fan. What \
+did you think of the\\nspeech in what do you think of president-elect Donald \
+Trump? \\nJONAH GOLDBERG, NATIONAL REVIEW: Look, I've been eating a\\nlot of \
+crow, which tastes remarkably like black swan. This is a remarkable\\nthing \
+that Donald Trump did. I thought his speech was actually very good\\nand very \
+smart. And I think the never-Trump movement is by definition\\nover, because \
+he won. We lost. You have to -- particularly if you are a\\nconservative, you \
+have to give him a fresh start and give him the benefit\\nof the doubt. If \
+Hillary Clinton can do it, I can do it. \\nAnd I thought he did a very good \
+job of sending that signal. I think there\\nare a lot of pitfalls he could \
+fall into with that. I do think -- and I\\ndon't want to take anything away \
+from his victory which was really\\nimpressive. It is really important to \
+pick up on something that Mara said.\\nThis was also Hillary Clinton's \
+defeat. This was a really poor performance\\nby Hillary Clinton. Very low \
+turnout from key constituencies. You had\\nless turnout overall than did you \
+in 2004 for John Kerry. We have got\\nsomething like 40 million more people \
+on the voter rolls. The Democratic\\nParty nominated literally the worst \
+person they could for a change election\\nand they rallied around it. And she \
+was a bad candidate both in theory and\\nin practice. \\nBAIER: And what do \
+you think this means for President Obama's legacy?\\nWhat is this saying? Is \
+it a repudiation of President Obama? \\nGOLDBERG: I think it is a direct \
+outgrowth of it, and I think it's really\\nbad news for Barack Obama's \
+legacy. Barack Obama condescended from a great\\nheight upon his political \
+opponents for eight years. He had sort of an\\nOlympian disdain for anybody \
+that disagreed with more, as his party became\\nmore leftwing, more \
+dismissive of concerns of the working class, started\\ntalking opening about \
+killing things like the coal industry. And it ticked\\noff a lot of people \
+and rightly so. And Donald Trump tapped into that. \\nBAIER: You have also \
+evolved since the beginning of our panel talk of this\\nelection. \\nCHARLES \
+KRAUTHAMMER, SYNDICATED COLUMNIST: Yes. I have now reached sort\\nof a stage \
+of -- I'm halfway there. There's no question that what Donald\\nTrump did was \
+historic, amazing. And he deserves all the credit for it.\\nAs Paul Ryan \
+said, he was the only one who heard the voice out there. And\\nthat was the \
+fact that the Reagan Democrats, the old white working class\\nthat Reagan \
+corralled, had gone away and nobody was listening to that. And\\nhe tuned in \
+to that and that's how he won the election. \\nAnd I do think what's even \
+more amazing is the fact that whereas everybody\\nwas worrying on the \
+Republican side that he would damage the down ballot\\ncandidates, he \
+actually had coattails and he helped to pull some of the\\ndown ballot \
+candidates over the finish line. And I agree secondly that the\\nother person \
+responsible for this Trump triumph is Hillary, probably the\\nworst candidate \
+possibly one could imagine. \\nBut I think what's overlooked is the role that \
+Barack Obama did. Remember\\nhe said two years ago, I'm not on the ballot, \
+but my policies are, and he\\ngot shellacked. Then he said, this year my \
+legacy is on the ballot. And I\\nthink he's going to lose it. I think it's \
+going to be undone, much of it,\\nin the first 100 days starting with \
+Obamacare. Everything that he signed,\\nall the executive orders are gone. \
+And I think he ends up a historic\\nparentheses. He left the Democrats in \
+ruins at every level. The\\ngovernorships, the state houses, the House and \
+the Senate, and now the\\nWhite House. He has been a wrecking ball for \
+Democrats, and I think he\\ndeserves a lot of the credit for Trump's victory. \
+\\nBAIER: Talk about Secretary Clinton, a lot of people praising, Mara, \
+the\\nspeech today where she emoted. Obviously she talked about bringing \
+the\\ncountry together. Let's listen to her last speech like this and this \
+one. \\n(BEGIN VIDEO CLIP) \\nCLINTON: Although we weren't able to shatter \
+that highest, hardest glass\\nceiling this time, thanks to you, it got about \
+18 million cracks in it.\\nAnd the light is shining through like never \
+before, filling us all with the\\nhope and the sure knowledge that the panel \
+will be a little easier next\\ntime. \\n(APPLAUSE) \\nCLINTON: I know we have \
+still not shattered that highest and hardest glass\\nceiling. But some day \
+someone will, and hopefully sooner than we might\\nthink right now. \
+\\n(APPLAUSE) \\n(END VIDEO CLIP) \\nBAIER: Just talking to people in this \
+town, they are catatonic today. I\\nthink that's a fair word. Just \
+anecdotally heard that shopping centers\\nwere quiet. Washington, D.C. is \
+elite establishment. \\nLIASSON: It's a blue -- dark blue spot. \\nBAIER: As \
+I said, this morning heads are exploding here that they can't\\nbelieve it. \
+\\nLIASSON: I think they can't believe it for a number of reasons, not \
+just\\nthat it was a partisan ideological contest, but also that for so \
+many\\npeople, and I've heard this from Republicans who thought that Donald \
+Trump\\nwas beyond the pale and that he wasn't -- his demeanor, his disregard \
+for\\ndemocratic values and institutions, all of those things made \
+him\\nunthinkable. And I think the shock of it was also part of the reason \
+why\\nyou have got this reaction. The financial markets, the betting markets \
+-- \\nBAIER: Although they finished -- \\nLIASSON: They bounced back. They \
+predicted that she would win. They\\nbuilt that in. \\nBAIER: Finished the \
+day at the highest. Final word on this. I want to go\\nto the break. \
+\\nSCHLAPP: I have to say at the end this is a rejection of Obama's \
+legacy,\\nof his imperial presidency. I think when you look at the lack \
+of\\nenthusiasm, the fact that you saw these skyrocketing Obamacare premiums \
+as\\nwell as the distress of Hillary Clinton, it all played a role in \
+weakening\\nHillary Clinton. And it gave Trump that advantage.\"\>", 
+  "}"}]], "Output",
+ CellChangeTimes->{3.703089610429742*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"c", " ", "=", " ", 
+   RowBox[{"StringSplit", "[", 
+    RowBox[{"a", ",", "\"\<.\>\""}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7027249615434895`*^9, 3.7027249642684793`*^9}, 
+   3.7027250240582137`*^9, {3.702725071904753*^9, 3.7027250761451783`*^9}, {
+   3.7027251907643805`*^9, 3.7027252391602187`*^9}, {3.70272561539176*^9, 
+   3.7027256915076017`*^9}, 3.7030896579425526`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bunny", "=", " ", 
+  RowBox[{"Classify", "[", 
+   RowBox[{"\"\<Sentiment\>\"", ",", "c"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7027257395069857`*^9, 3.702725740219389*^9}, {
+   3.7027519129321823`*^9, 3.7027519162820005`*^9}, 3.7027523803394737`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ClassifierFunction","mlincfttp",
+   "\"Incompatible variable type (\\!\\(\\*RowBox[{\\\"\\\\\\\"Text\\\\\\\"\\\
+\"}]\\)) and variable value (\\!\\(\\*RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"\
+\\\\\\\\nPRESIDENT-ELECT DONALD TRUMP: Those who have chosen not \
+to\\\\\\\\nsupport me in the past -- of which there were a few people -- I'm \
+reaching\\\\\\\\nout to you for your guidance and your help so that we can \
+work together and\\\\\\\\nunify our great country\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\" Working together, we will begin the urgent task\\\\\\\\nof \
+rebuilding our nation and renewing the American dream\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\" \\\\\\\\nHILLARY CLINTON, DEMOCRATIC PRESIDENTIAL NOMINEE: We \
+have seen that our nation\\\\\\\\nis more deeply divided than we \
+thought\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\" But I still believe in \
+America,\\\\\\\\nand I always will\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\" And \
+if you do, then we must accept this result and then\\\\\\\\nlook to the \
+future\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\" Donald Trump is going to be our \
+president\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \
+\\\"40\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", \\\"\\\\\\\" If Hillary \
+Clinton can do it, I can do it\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\" \
+\\\\\\\\nAnd I thought he did a very good job of sending that \
+signal\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\" I think there\\\\\\\\nare a lot \
+of pitfalls he could fall into with that\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\" \
+I do think -- and I\\\\\\\\ndon't want to take anything away from his victory \
+which was really\\\\\\\\nimpressive\\\\\\\"\\\", \\\",\\\", RowBox[{\\\"\
+\[LeftSkeleton]\\\", \\\"59\\\", \\\"\[RightSkeleton]\\\"}]}], \
+\\\"}\\\"}]\\)).\"",2,53,40,25660583510202926982,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7030895807161665`*^9, 3.703089661474447*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[
+   TemplateBox[{RowBox[{
+       StyleBox[
+        TagBox["ClassifierFunction", "SummaryHead"], 
+        "NonInterpretableSummary"], 
+       StyleBox["[", "NonInterpretableSummary"], 
+       DynamicModuleBox[{Typeset`open$$ = False}, 
+        PanelBox[
+         PaneSelectorBox[{False -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquarePlusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Sentiment\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["3", "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}], True -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquareMinusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Sentiment\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["3", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Feature type: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Text\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of training examples: \"", 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}]}, 
+          Dynamic[Typeset`open$$], ImageSize -> Automatic], BaselinePosition -> 
+         Baseline], DynamicModuleValues :> {}], 
+       StyleBox["]", "NonInterpretableSummary"]}]},
+    "CopyTag",
+    DisplayFunction->(#& ),
+    InterpretationFunction->("ClassifierFunction[\[Ellipsis]]"& )],
+   False,
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"{", 
+     RowBox[{"\<\"\\nPRESIDENT-ELECT DONALD TRUMP: Those who have chosen not \
+to\\nsupport me in the past -- of which there were a few people -- I'm \
+reaching\\nout to you for your guidance and your help so that we can work \
+together and\\nunify our great country\"\>", 
+      ",", "\<\" Working together, we will begin the urgent task\\nof \
+rebuilding our nation and renewing the American dream\"\>", 
+      ",", "\<\" \\nHILLARY CLINTON, DEMOCRATIC PRESIDENTIAL NOMINEE: We have \
+seen that our nation\\nis more deeply divided than we thought\"\>", 
+      ",", "\<\" But I still believe in America,\\nand I always will\"\>", 
+      ",", "\<\" And if you do, then we must accept this result and \
+then\\nlook to the future\"\>", 
+      ",", "\<\" Donald Trump is going to be our president\"\>", 
+      ",", "\<\" We owe him\\nan open mind and the chance to lead\"\>", 
+      ",", "\<\" \\nBRET BAIER, ANCHOR: Donald Trump is the president-elect \
+today\"\>", 
+      ",", "\<\" As we look at the map\\nof the states that were called, red \
+obviously Republican, blue Democrat\"\>", 
+      ",", "\<\"\\nAnd you see some gray in there\"\>", 
+      ",", "\<\" That's because we have not called those\\nstates as of yet\"\
+\>", ",", "\<\" Here is why -- Michigan, 96 percent of the vote is in,\\nand \
+there you see it looks like Donald Trump is heading towards a \
+win\\nthere\"\>", 
+      ",", "\<\" But again, we're waiting for some other vote to come in\"\>",
+       ",", "\<\" But it\\nlooks like we're going to be able to eventually to \
+call Michigan for Donald\\nTrump\"\>", 
+      ",", "\<\" In New Hampshire, 98 percent of the vote is in\"\>", 
+      ",", "\<\" It's not a big\\nstate\"\>", 
+      ",", "\<\" I don't know why it takes so long to get all these votes, \
+but they\\nare still cooking\"\>", 
+      ",", "\<\" Senator Ayotte has conceded to Maggie Hassan, \
+the\\nDemocrat, in that Senate race, but we have not called the \
+presidential\\nrace\"\>", 
+      ",", "\<\" \\nIn Arizona, in red Arizona, 75 percent is in because you \
+have a lot of\\nmail-in ballots that have to be counted\"\>", 
+      ",", "\<\" And there you see Donald Trump\\neventually will probably \
+get another win there\"\>", 
+      ",", "\<\" \\nWith that, let's bring in our panel: Jonah Goldberg, \
+senior editor of National Review; Mercedes Schlapp, columnist for The \
+Washington Times; Mara Liasson, national political correspondent of National \
+Public Radio, and syndicated columnist Charles Krauthammer\"\>", 
+      ",", "\<\" Mara, your thoughts? \\nMARA LIASSON, NATIONAL PUBLIC RADIO: \
+Well, it was an upset for the ages\"\>", 
+      ",", "\<\"\\nAs we have been saying all night long, it was incredible\"\
+\>", ",", "\<\" Everybody was\\nwrong, including Donald Trump who didn't \
+think he was going to win, but he\\ndid\"\>", 
+      ",", "\<\" And he really did bust apart the coalitions and the maps for \
+both\\nparties\"\>", 
+      ",", "\<\" I think that the Republican party now is white working class\
+\\nparty\"\>", 
+      ",", "\<\" It has got the rustbelt now as part of its base\"\>", 
+      ",", "\<\" And the Democrats\\nare kind of trying to deal with their \
+shock and figuring out what went\\nwrong\"\>", 
+      ",", "\<\" In the circular firing squad department, I think they have a \
+couple\\npeople to aim at\"\>", 
+      ",", "\<\" James Comey, I hear a lot about, Anthony Weiner,\\nWikiLeaks \
+and Hillary Clinton herself who turned out to be a pretty weak\\ncandidate, a \
+lot of baggage, and a status quo candidate in a change\\nelection\"\>", 
+      ",", "\<\" \\nBAIER: If you look at policies of the next president \
+should be in the exit\\npolls, same as President Obama, 28 percent, more \
+conservative, 48 percent,\\nmore liberal, 17 percent\"\>", 
+      ",", "\<\" Of those 17 percent, 22 percent of them voted\\nfor Donald \
+Trump\"\>", 
+      ",", "\<\" So that, Mercedes, is the Bernie Sanders vote I \
+would\\nassume\"\>", 
+      ",", "\<\" \\nMERCEDES SCHLAPP, THE WASHINGTON TIMES: That's right\"\>",
+       ",", "\<\" \\nBAIER: And those are probably people who did not talk to \
+the exit poll\\npeople because they said I'm not going to tell them that I'm \
+voting for\\nDonald Trump\"\>", 
+      ",", "\<\" \\nSCHLAPP: And I also think it's a trade policy message \
+they were trying to\\npush through because when you think about it, Bernie \
+Sanders, first of all,\\nran against the status quo, secondly, talked about \
+the problems with trade,\\nwith TPP, with NAFTA\"\>", 
+      ",", "\<\" That's the same message that we have seen Donald\\nTrump \
+push forward in this election\"\>", 
+      ",", "\<\" \\nAnd I think it's one of the reasons why Donald Trump has \
+just -- was\\nable to do so well in the rust belt states with the white \
+working class,\\nwhere they have seen manufacturing jobs leave their \
+communities, companies\\ngo away, and the opportunity for Donald Trump to \
+really hone in on that\\neconomic trade message which at the same time worked \
+with the Bernie\\nSanders supporters\"\>", ",", "\<\" \\nBAIER: Jonah\"\>", 
+      ",", "\<\" You have never been a fan\"\>", 
+      ",", "\<\" What did you think of the\\nspeech in what do you think of \
+president-elect Donald Trump? \\nJONAH GOLDBERG, NATIONAL REVIEW: Look, I've \
+been eating a\\nlot of crow, which tastes remarkably like black swan\"\>", 
+      ",", "\<\" This is a remarkable\\nthing that Donald Trump did\"\>", 
+      ",", "\<\" I thought his speech was actually very good\\nand very smart\
+\"\>", ",", "\<\" And I think the never-Trump movement is by \
+definition\\nover, because he won\"\>", ",", "\<\" We lost\"\>", 
+      ",", "\<\" You have to -- particularly if you are a\\nconservative, you \
+have to give him a fresh start and give him the benefit\\nof the doubt\"\>", 
+      ",", "\<\" If Hillary Clinton can do it, I can do it\"\>", 
+      ",", "\<\" \\nAnd I thought he did a very good job of sending that \
+signal\"\>", 
+      ",", "\<\" I think there\\nare a lot of pitfalls he could fall into \
+with that\"\>", 
+      ",", "\<\" I do think -- and I\\ndon't want to take anything away from \
+his victory which was really\\nimpressive\"\>", 
+      ",", "\<\" It is really important to pick up on something that Mara \
+said\"\>", ",", "\<\"\\nThis was also Hillary Clinton's defeat\"\>", 
+      ",", "\<\" This was a really poor performance\\nby Hillary Clinton\"\>",
+       ",", "\<\" Very low turnout from key constituencies\"\>", 
+      ",", "\<\" You had\\nless turnout overall than did you in 2004 for John \
+Kerry\"\>", 
+      ",", "\<\" We have got\\nsomething like 40 million more people on the \
+voter rolls\"\>", 
+      ",", "\<\" The Democratic\\nParty nominated literally the worst person \
+they could for a change election\\nand they rallied around it\"\>", 
+      ",", "\<\" And she was a bad candidate both in theory and\\nin practice\
+\"\>", ",", "\<\" \\nBAIER: And what do you think this means for President \
+Obama's legacy?\\nWhat is this saying? Is it a repudiation of President \
+Obama? \\nGOLDBERG: I think it is a direct outgrowth of it, and I think it's \
+really\\nbad news for Barack Obama's legacy\"\>", 
+      ",", "\<\" Barack Obama condescended from a great\\nheight upon his \
+political opponents for eight years\"\>", 
+      ",", "\<\" He had sort of an\\nOlympian disdain for anybody that \
+disagreed with more, as his party became\\nmore leftwing, more dismissive of \
+concerns of the working class, started\\ntalking opening about killing things \
+like the coal industry\"\>", 
+      ",", "\<\" And it ticked\\noff a lot of people and rightly so\"\>", 
+      ",", "\<\" And Donald Trump tapped into that\"\>", 
+      ",", "\<\" \\nBAIER: You have also evolved since the beginning of our \
+panel talk of this\\nelection\"\>", 
+      ",", "\<\" \\nCHARLES KRAUTHAMMER, SYNDICATED COLUMNIST: Yes\"\>", 
+      ",", "\<\" I have now reached sort\\nof a stage of -- I'm halfway there\
+\"\>", ",", "\<\" There's no question that what Donald\\nTrump did was \
+historic, amazing\"\>", ",", "\<\" And he deserves all the credit for it\"\>",
+       ",", "\<\"\\nAs Paul Ryan said, he was the only one who heard the \
+voice out there\"\>", 
+      ",", "\<\" And\\nthat was the fact that the Reagan Democrats, the old \
+white working class\\nthat Reagan corralled, had gone away and nobody was \
+listening to that\"\>", 
+      ",", "\<\" And\\nhe tuned in to that and that's how he won the election\
+\"\>", ",", "\<\" \\nAnd I do think what's even more amazing is the fact that \
+whereas everybody\\nwas worrying on the Republican side that he would damage \
+the down ballot\\ncandidates, he actually had coattails and he helped to pull \
+some of the\\ndown ballot candidates over the finish line\"\>", 
+      ",", "\<\" And I agree secondly that the\\nother person responsible for \
+this Trump triumph is Hillary, probably the\\nworst candidate possibly one \
+could imagine\"\>", 
+      ",", "\<\" \\nBut I think what's overlooked is the role that Barack \
+Obama did\"\>", 
+      ",", "\<\" Remember\\nhe said two years ago, I'm not on the ballot, but \
+my policies are, and he\\ngot shellacked\"\>", 
+      ",", "\<\" Then he said, this year my legacy is on the ballot\"\>", 
+      ",", "\<\" And I\\nthink he's going to lose it\"\>", 
+      ",", "\<\" I think it's going to be undone, much of it,\\nin the first \
+100 days starting with Obamacare\"\>", 
+      ",", "\<\" Everything that he signed,\\nall the executive orders are \
+gone\"\>", ",", "\<\" And I think he ends up a historic\\nparentheses\"\>", 
+      ",", "\<\" He left the Democrats in ruins at every level\"\>", 
+      ",", "\<\" The\\ngovernorships, the state houses, the House and the \
+Senate, and now the\\nWhite House\"\>", 
+      ",", "\<\" He has been a wrecking ball for Democrats, and I think \
+he\\ndeserves a lot of the credit for Trump's victory\"\>", 
+      ",", "\<\" \\nBAIER: Talk about Secretary Clinton, a lot of people \
+praising, Mara, the\\nspeech today where she emoted\"\>", 
+      ",", "\<\" Obviously she talked about bringing the\\ncountry together\"\
+\>", ",", "\<\" Let's listen to her last speech like this and this one\"\>", 
+      ",", "\<\" \\n(BEGIN VIDEO CLIP) \\nCLINTON: Although we weren't able \
+to shatter that highest, hardest glass\\nceiling this time, thanks to you, it \
+got about 18 million cracks in it\"\>", 
+      ",", "\<\"\\nAnd the light is shining through like never before, \
+filling us all with the\\nhope and the sure knowledge that the panel will be \
+a little easier next\\ntime\"\>", 
+      ",", "\<\" \\n(APPLAUSE) \\nCLINTON: I know we have still not shattered \
+that highest and hardest glass\\nceiling\"\>", 
+      ",", "\<\" But some day someone will, and hopefully sooner than we \
+might\\nthink right now\"\>", 
+      ",", "\<\" \\n(APPLAUSE) \\n(END VIDEO CLIP) \\nBAIER: Just talking to \
+people in this town, they are catatonic today\"\>", 
+      ",", "\<\" I\\nthink that's a fair word\"\>", 
+      ",", "\<\" Just anecdotally heard that shopping centers\\nwere \
+quiet\"\>", ",", "\<\" Washington, D\"\>", ",", "\<\"C\"\>", 
+      ",", "\<\" is elite establishment\"\>", 
+      ",", "\<\" \\nLIASSON: It's a blue -- dark blue spot\"\>", 
+      ",", "\<\" \\nBAIER: As I said, this morning heads are exploding here \
+that they can't\\nbelieve it\"\>", 
+      ",", "\<\" \\nLIASSON: I think they can't believe it for a number of \
+reasons, not just\\nthat it was a partisan ideological contest, but also that \
+for so many\\npeople, and I've heard this from Republicans who thought that \
+Donald Trump\\nwas beyond the pale and that he wasn't -- his demeanor, his \
+disregard for\\ndemocratic values and institutions, all of those things made \
+him\\nunthinkable\"\>", 
+      ",", "\<\" And I think the shock of it was also part of the reason \
+why\\nyou have got this reaction\"\>", 
+      ",", "\<\" The financial markets, the betting markets -- \\nBAIER: \
+Although they finished -- \\nLIASSON: They bounced back\"\>", 
+      ",", "\<\" They predicted that she would win\"\>", 
+      ",", "\<\" They\\nbuilt that in\"\>", 
+      ",", "\<\" \\nBAIER: Finished the day at the highest\"\>", 
+      ",", "\<\" Final word on this\"\>", 
+      ",", "\<\" I want to go\\nto the break\"\>", 
+      ",", "\<\" \\nSCHLAPP: I have to say at the end this is a rejection of \
+Obama's legacy,\\nof his imperial presidency\"\>", 
+      ",", "\<\" I think when you look at the lack of\\nenthusiasm, the fact \
+that you saw these skyrocketing Obamacare premiums as\\nwell as the distress \
+of Hillary Clinton, it all played a role in weakening\\nHillary Clinton\"\>", 
+      ",", "\<\" And it gave Trump that advantage\"\>"}], "}"}], "}"}], ",", 
+   RowBox[{"PerformanceGoal", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"IndeterminateThreshold", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"UtilityFunction", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"\<\"BatchProcessing\"\>", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ClassPriors", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"\<\"TieBreakerFunction\"\>", "\[Rule]", "RandomChoice"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.7027257433918657`*^9, 3.702753280498682*^9, 
+  3.702754739861893*^9, 3.703089580749734*^9, 3.7030896615014644`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Tally", "[", "%18", "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Neutral\"\>", ",", "62"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Positive\"\>", ",", "34"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Negative\"\>", ",", "30"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"Indeterminate", ",", "1"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.702725749733704*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StringReplace", "[", 
+  RowBox[{"bunny", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\"\<Neutral\>\"", "->", "\"\<0\>\""}], ",", 
+     RowBox[{"\"\<Positive\>\"", "->", "\"\<1\>\""}], ",", 
+     RowBox[{"\"\<Negative\>\"", "\[Rule]", "\"\<-1\>\""}], ",", 
+     RowBox[{"\"\<Indeterminate\>\"", "\[Rule]", "\"\<o\>\""}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.702751480262967*^9, 3.7027515289817657`*^9}, {
+  3.702751560321583*^9, 3.7027516039102244`*^9}, {3.702751653555502*^9, 
+  3.7027517654041367`*^9}, {3.702751876465762*^9, 3.7027518775123386`*^9}, {
+  3.7027519244822893`*^9, 3.7027519257930717`*^9}, {3.702753747692475*^9, 
+  3.702753766245696*^9}, {3.7027540592339344`*^9, 3.7027540767495227`*^9}, {
+  3.7027542495784197`*^9, 3.702754264621211*^9}, {3.7027544918896384`*^9, 
+  3.702754505421417*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringReplace","strse",
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringReplace\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{\\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\
+\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Negative\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Negative\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\
+\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\
+\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Negative\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\
+\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Negative\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Negative\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\
+\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\
+\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Negative\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Negative\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Negative\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Negative\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Negative\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Positive\\\
+\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\
+\"Positive\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Negative\\\\\\\"\\\", \
+\\\",\\\", \\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Negative\\\
+\\\\\"\\\", \\\",\\\", \\\"\\\\\\\"Positive\\\\\\\"\\\", \\\",\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"77\\\", \\\"\[RightSkeleton]\\\"}]}], \\\
+\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{\\\"\\\\\\\"Neutral\\\\\\\"\\\", \\\"\[Rule]\\\", \
+\\\"\\\\\\\"0\\\\\\\"\\\"}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Positive\\\\\\\"\\\", \\\"\[Rule]\\\", \
+\\\"\\\\\\\"1\\\\\\\"\\\"}], \\\",\\\", \
+RowBox[{\\\"\\\\\\\"Negative\\\\\\\"\\\", \\\"\[Rule]\\\", \\\"\\\\\\\"-1\\\\\
+\\\"\\\"}], \\\",\\\", RowBox[{\\\"\\\\\\\"Indeterminate\\\\\\\"\\\", \\\"\
+\[Rule]\\\", \\\"\\\\\\\"o\\\\\\\"\\\"}]}], \\\"}\\\"}]}], \\\"]\\\"}]\\).\"",
+   2,42,38,25660583510202926982,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.70275192864141*^9, 3.7027519591559453`*^9}, 
+   3.7027523888868484`*^9, 3.7027524232007875`*^9, 3.7027532541563406`*^9, 
+   3.7027532851898994`*^9, 3.70275427105486*^9, 3.7027545096925783`*^9, 
+   3.702754743144204*^9, 3.7027550088937583`*^9}],
+
+Cell[BoxData[
+ RowBox[{"StringReplace", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Neutral\"\>", ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Negative\"\>", ",", "\<\"Negative\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Positive\"\>",
+      ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Negative\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Positive\"\>",
+      ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>", 
+     ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Positive\"\>",
+      ",", "\<\"Positive\"\>", ",", "\<\"Negative\"\>", 
+     ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>",
+      ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Positive\"\>",
+      ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Negative\"\>", ",", "\<\"Positive\"\>", 
+     ",", "\<\"Negative\"\>", ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>", ",", "Indeterminate", 
+     ",", "\<\"Negative\"\>", ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Negative\"\>", ",", "\<\"Positive\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Positive\"\>", ",", "\<\"Negative\"\>",
+      ",", "\<\"Positive\"\>", ",", "\<\"Negative\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>", ",", "\<\"Positive\"\>",
+      ",", "\<\"Negative\"\>", ",", "\<\"Negative\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Positive\"\>", ",", "\<\"Positive\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Positive\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Positive\"\>", ",", "\<\"Positive\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>", ",", "\<\"Negative\"\>",
+      ",", "\<\"Neutral\"\>", ",", "\<\"Positive\"\>", 
+     ",", "\<\"Positive\"\>", ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Positive\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Negative\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>",
+      ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Negative\"\>",
+      ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", 
+     ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>", ",", "\<\"Neutral\"\>"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\<\"Neutral\"\>", "\[Rule]", "\<\"0\"\>"}], ",", 
+     RowBox[{"\<\"Positive\"\>", "\[Rule]", "\<\"1\"\>"}], ",", 
+     RowBox[{"\<\"Negative\"\>", "\[Rule]", "\<\"-1\"\>"}], ",", 
+     RowBox[{"\<\"Indeterminate\"\>", "\[Rule]", "\<\"o\"\>"}]}], "}"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.7027532541613483`*^9, 3.7027532852189207`*^9, 
+  3.7027542710948896`*^9, 3.702754509725601*^9, 3.7027547431752234`*^9, 
+  3.7027550089237814`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.702752994490554*^9, 3.702752994560562*^9}, {
+  3.7027531822825155`*^9, 3.7027532405830455`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"d", "=", 
+  RowBox[{"StringSplit", "[", 
+   RowBox[{"c", ",", "\"\<?\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.702726104606981*^9, 3.7027261187979193`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+   "{", "\<\"Fox News Fox Business Fox News Go Fox News Radio Fox Nation Fox \
+News Insider  \\n   \\n \\n  Fox News   Shows    \\n \\nExpand/Collapse \
+Search  \\n                 \\n   \\nHome Video Politics U\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\"S\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Opinion Business Entertainment Tech Science Health Travel \
+Lifestyle World On Air        \\n \\n \\n \\n\\n \\n     \\n   \\n  SPECIAL \
+REPORT   Dissecting Donald Trump's win over Hillary Clinton  \\n \\n  \
+Published November 09, 2016 \\n  FoxNews\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\"com        \\n \\n  Facebook 0   Twitter 0   Email   Print    \
+\\n\\n \\n   Watch the latest video at video\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\"foxnews\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\"com   \\nThis is a rush transcript from \\\"Special Report with \
+Bret Baier,\\\" November 9, 2016\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" This copy may not be in its final form and may be updated\"\>", 
+    "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\n(BEGIN VIDEO CLIPS) \\nPRESIDENT-ELECT DONALD TRUMP: Those \
+who have chosen not to\\nsupport me in the past -- of which there were a few \
+people -- I'm reaching\\nout to you for your guidance and your help so that \
+we can work together and\\nunify our great country\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Working together, we will begin the urgent task\\nof rebuilding \
+our nation and renewing the American dream\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nHILLARY CLINTON, DEMOCRATIC PRESIDENTIAL NOMINEE: We have \
+seen that our nation\\nis more deeply divided than we thought\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" But I still believe in America,\\nand I always will\"\>", "}"}],
+    ",", 
+   RowBox[{
+   "{", "\<\" And if you do, then we must accept this result and then\\nlook \
+to the future\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" Donald Trump is going to be our president\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" We owe him\\nan open mind and the chance to lead\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" \\n(END VIDEO CLIPS) \\nBRET BAIER, ANCHOR: Donald Trump is the \
+president-elect today\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" As we look at the map\\nof the states that were called, red \
+obviously Republican, blue Democrat\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\"\\nAnd you see some gray in there\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" That's because we have not called those\\nstates as of yet\"\>",
+     "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Here is why -- Michigan, 96 percent of the vote is in,\\nand \
+there you see it looks like Donald Trump is heading towards a \
+win\\nthere\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" But again, we're waiting for some other vote to come in\"\>", 
+    "}"}], ",", 
+   RowBox[{
+   "{", "\<\" But it\\nlooks like we're going to be able to eventually to \
+call Michigan for Donald\\nTrump\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" In New Hampshire, 98 percent of the vote is in\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" It's not a big\\nstate\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" I don't know why it takes so long to get all these votes, but \
+they\\nare still cooking\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Senator Ayotte has conceded to Maggie Hassan, the\\nDemocrat, \
+in that Senate race, but we have not called the presidential\\nrace\"\>", 
+    "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nIn Arizona, in red Arizona, 75 percent is in because you \
+have a lot of\\nmail-in ballots that have to be counted\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And there you see Donald Trump\\neventually will probably get \
+another win there\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nWith that, let's bring in our panel: Jonah Goldberg, senior \
+editor of National Review; Mercedes Schlapp, columnist for The Washington \
+Times; Mara Liasson, national political correspondent of National Public \
+Radio, and syndicated columnist Charles Krauthammer\"\>", "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\" Mara, your thoughts\"\>", 
+     ",", "\<\" \\nMARA LIASSON, NATIONAL PUBLIC RADIO: Well, it was an upset \
+for the ages\"\>"}], "}"}], ",", 
+   RowBox[{
+   "{", "\<\"\\nAs we have been saying all night long, it was incredible\"\>",
+     "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Everybody was\\nwrong, including Donald Trump who didn't think \
+he was going to win, but he\\ndid\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And he really did bust apart the coalitions and the maps for \
+both\\nparties\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" I think that the Republican party now is white working \
+class\\nparty\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" It has got the rustbelt now as part of its base\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" And the Democrats\\nare kind of trying to deal with their shock \
+and figuring out what went\\nwrong\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" In the circular firing squad department, I think they have a \
+couple\\npeople to aim at\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" James Comey, I hear a lot about, Anthony Weiner,\\nWikiLeaks \
+and Hillary Clinton herself who turned out to be a pretty weak\\ncandidate, a \
+lot of baggage, and a status quo candidate in a change\\nelection\"\>", "}"}],
+    ",", 
+   RowBox[{
+   "{", "\<\" \\nBAIER: If you look at policies of the next president should \
+be in the exit\\npolls, same as President Obama, 28 percent, more \
+conservative, 48 percent,\\nmore liberal, 17 percent\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Of those 17 percent, 22 percent of them voted\\nfor Donald \
+Trump\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" So that, Mercedes, is the Bernie Sanders vote I \
+would\\nassume\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nMERCEDES SCHLAPP, THE WASHINGTON TIMES: That's right\"\>", 
+    "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nBAIER: And those are probably people who did not talk to the \
+exit poll\\npeople because they said I'm not going to tell them that I'm \
+voting for\\nDonald Trump\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nSCHLAPP: And I also think it's a trade policy message they \
+were trying to\\npush through because when you think about it, Bernie \
+Sanders, first of all,\\nran against the status quo, secondly, talked about \
+the problems with trade,\\nwith TPP, with NAFTA\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" That's the same message that we have seen Donald\\nTrump push \
+forward in this election\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nAnd I think it's one of the reasons why Donald Trump has \
+just -- was\\nable to do so well in the rust belt states with the white \
+working class,\\nwhere they have seen manufacturing jobs leave their \
+communities, companies\\ngo away, and the opportunity for Donald Trump to \
+really hone in on that\\neconomic trade message which at the same time worked \
+with the Bernie\\nSanders supporters\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" \\nBAIER: Jonah\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" You have never been a fan\"\>", "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\" What did you think of the\\nspeech in what do you think of \
+president-elect Donald Trump\"\>", 
+     ",", "\<\" \\nJONAH GOLDBERG, NATIONAL REVIEW: Look, I've been eating \
+a\\nlot of crow, which tastes remarkably like black swan\"\>"}], "}"}], ",", 
+   RowBox[{
+   "{", "\<\" This is a remarkable\\nthing that Donald Trump did\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" I thought his speech was actually very good\\nand very \
+smart\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And I think the never-Trump movement is by definition\\nover, \
+because he won\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" We lost\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" You have to -- particularly if you are a\\nconservative, you \
+have to give him a fresh start and give him the benefit\\nof the doubt\"\>", 
+    "}"}], ",", 
+   RowBox[{"{", "\<\" If Hillary Clinton can do it, I can do it\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" \\nAnd I thought he did a very good job of sending that \
+signal\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" I think there\\nare a lot of pitfalls he could fall into with \
+that\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" I do think -- and I\\ndon't want to take anything away from his \
+victory which was really\\nimpressive\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" It is really important to pick up on something that Mara said\"\
+\>", "}"}], ",", 
+   RowBox[{"{", "\<\"\\nThis was also Hillary Clinton's defeat\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" This was a really poor performance\\nby Hillary Clinton\"\>", 
+    "}"}], ",", 
+   RowBox[{"{", "\<\" Very low turnout from key constituencies\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" You had\\nless turnout overall than did you in 2004 for John \
+Kerry\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" We have got\\nsomething like 40 million more people on the \
+voter rolls\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" The Democratic\\nParty nominated literally the worst person \
+they could for a change election\\nand they rallied around it\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" And she was a bad candidate both in theory and\\nin \
+practice\"\>", "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\" \\nBAIER: And what do you think this means for President \
+Obama's legacy\"\>", ",", "\<\"\\nWhat is this saying\"\>", 
+     ",", "\<\" Is it a repudiation of President Obama\"\>", 
+     ",", "\<\" \\nGOLDBERG: I think it is a direct outgrowth of it, and I \
+think it's really\\nbad news for Barack Obama's legacy\"\>"}], "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Barack Obama condescended from a great\\nheight upon his \
+political opponents for eight years\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" He had sort of an\\nOlympian disdain for anybody that disagreed \
+with more, as his party became\\nmore leftwing, more dismissive of concerns \
+of the working class, started\\ntalking opening about killing things like the \
+coal industry\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And it ticked\\noff a lot of people and rightly so\"\>", "}"}], 
+   ",", 
+   RowBox[{"{", "\<\" And Donald Trump tapped into that\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nBAIER: You have also evolved since the beginning of our \
+panel talk of this\\nelection\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nCHARLES KRAUTHAMMER, SYNDICATED COLUMNIST: Yes\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" I have now reached sort\\nof a stage of -- I'm halfway \
+there\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" There's no question that what Donald\\nTrump did was historic, \
+amazing\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" And he deserves all the credit for it\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\"\\nAs Paul Ryan said, he was the only one who heard the voice \
+out there\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And\\nthat was the fact that the Reagan Democrats, the old \
+white working class\\nthat Reagan corralled, had gone away and nobody was \
+listening to that\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And\\nhe tuned in to that and that's how he won the \
+election\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nAnd I do think what's even more amazing is the fact that \
+whereas everybody\\nwas worrying on the Republican side that he would damage \
+the down ballot\\ncandidates, he actually had coattails and he helped to pull \
+some of the\\ndown ballot candidates over the finish line\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And I agree secondly that the\\nother person responsible for \
+this Trump triumph is Hillary, probably the\\nworst candidate possibly one \
+could imagine\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nBut I think what's overlooked is the role that Barack Obama \
+did\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Remember\\nhe said two years ago, I'm not on the ballot, but my \
+policies are, and he\\ngot shellacked\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Then he said, this year my legacy is on the ballot\"\>", "}"}], 
+   ",", 
+   RowBox[{"{", "\<\" And I\\nthink he's going to lose it\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" I think it's going to be undone, much of it,\\nin the first 100 \
+days starting with Obamacare\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Everything that he signed,\\nall the executive orders are \
+gone\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And I think he ends up a historic\\nparentheses\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" He left the Democrats in ruins at every level\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" The\\ngovernorships, the state houses, the House and the \
+Senate, and now the\\nWhite House\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" He has been a wrecking ball for Democrats, and I think \
+he\\ndeserves a lot of the credit for Trump's victory\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nBAIER: Talk about Secretary Clinton, a lot of people \
+praising, Mara, the\\nspeech today where she emoted\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Obviously she talked about bringing the\\ncountry together\"\>",
+     "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Let's listen to her last speech like this and this one\"\>", 
+    "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\n(BEGIN VIDEO CLIP) \\nCLINTON: Although we weren't able to \
+shatter that highest, hardest glass\\nceiling this time, thanks to you, it \
+got about 18 million cracks in it\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\"\\nAnd the light is shining through like never before, filling \
+us all with the\\nhope and the sure knowledge that the panel will be a little \
+easier next\\ntime\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\n(APPLAUSE) \\nCLINTON: I know we have still not shattered \
+that highest and hardest glass\\nceiling\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" But some day someone will, and hopefully sooner than we \
+might\\nthink right now\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\n(APPLAUSE) \\n(END VIDEO CLIP) \\nBAIER: Just talking to \
+people in this town, they are catatonic today\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" I\\nthink that's a fair word\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Just anecdotally heard that shopping centers\\nwere quiet\"\>", 
+    "}"}], ",", 
+   RowBox[{"{", "\<\" Washington, D\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\"C\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" is elite establishment\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" \\nLIASSON: It's a blue -- dark blue spot\"\>", "}"}], 
+   ",", 
+   RowBox[{
+   "{", "\<\" \\nBAIER: As I said, this morning heads are exploding here that \
+they can't\\nbelieve it\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nLIASSON: I think they can't believe it for a number of \
+reasons, not just\\nthat it was a partisan ideological contest, but also that \
+for so many\\npeople, and I've heard this from Republicans who thought that \
+Donald Trump\\nwas beyond the pale and that he wasn't -- his demeanor, his \
+disregard for\\ndemocratic values and institutions, all of those things made \
+him\\nunthinkable\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" And I think the shock of it was also part of the reason \
+why\\nyou have got this reaction\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" The financial markets, the betting markets -- \\nBAIER: \
+Although they finished -- \\nLIASSON: They bounced back\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" They predicted that she would win\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" They\\nbuilt that in\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" \\nBAIER: Finished the day at the highest\"\>", "}"}], 
+   ",", 
+   RowBox[{"{", "\<\" Final word on this\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" I want to go\\nto the break\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nSCHLAPP: I have to say at the end this is a rejection of \
+Obama's legacy,\\nof his imperial presidency\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" I think when you look at the lack of\\nenthusiasm, the fact \
+that you saw these skyrocketing Obamacare premiums as\\nwell as the distress \
+of Hillary Clinton, it all played a role in weakening\\nHillary Clinton\"\>", 
+    "}"}], ",", 
+   RowBox[{"{", "\<\" And it gave Trump that advantage\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\nContent and Programming Copyright 2016 Fox News Network, LLC\
+\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" ALL RIGHTS RESERVED\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" Copyright 2016 CQ-Roll Call, Inc\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" All materials herein are protected by United States copyright \
+law and may not be reproduced, distributed, transmitted, displayed, published \
+or broadcast without the prior written permission of CQ-Roll Call\"\>", "}"}],
+    ",", 
+   RowBox[{
+   "{", "\<\" You may not alter or remove any trademark, copyright or other \
+notice from copies of the content\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" \\n       \\n \\n \\n \\n  Advertisement      \\n   \\n \\n   \
+\\n \\n         \\n   Trending on Fox News  \\n  1     North Korea: US bomber \
+flight pushes two countries on brink of nuclear war       2     Tucker \
+Carlson: White House Correspondents' Dinner 'an extended middle finger' to \
+Trump       3     'MOAB' aftermath: Fox News tours site where Afghanistan \
+bomb was dropped       4     Former Trump adviser says he's cooperating with \
+Senate Russian probe       5     Bible reading not allowed before class, \
+professor tells student      \\n     \\n \\n   \\n \\n \\n           \\n   \
+\\n\\n \\n\\n \\n\\n \\n \\n \\n \\n     \\n         \\n  Site Index       \
+Sections  \\nHome Video Politics U\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\"S\"\>", "}"}], ",", 
+   RowBox[{
+   "{", "\<\" Opinion Entertainment Tech Science Health Travel Lifestyle \
+World Sports Weather On Air     Tools  \\nLive Video Trending Newsletters \
+Alerts Podcasts Radio Apps & Products     About  \\nCareers College Students \
+Fox Around the World Advertise With Us New Terms of Use (What's New) New \
+Privacy Policy Ad Choices Help Email Newsroom Media Relations Closed \
+Captioning Policy     Follow  \\nFacebook Twitter Google+ Instagram RSS \
+Newsletters  \\n  Fox News   Back to Top    \\nThis material may not be \
+published, broadcast, rewritten, or redistributed\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" \[Copyright]2017 FOX News Network, LLC\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" All rights reserved\"\>", "}"}], ",", 
+   RowBox[{"{", "\<\" All market data delayed 20 minutes\"\>", "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.702726122672557*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"e", "=", 
+  RowBox[{"StringSplit", "[", 
+   RowBox[{"d", ",", "\"\<,\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7027261527855606`*^9, 3.7027261745255513`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "StringSplit","strse",
+   "\"String or list of strings expected at position \\!\\(\\*RowBox[{\\\"1\\\
+\"}]\\) in \\!\\(\\*RowBox[{\\\"StringSplit\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"{\\\", \\\"\\\\\\\"Fox News \
+Fox Business Fox News Go Fox News Radio Fox Nation Fox News Insider  \
+\\\\\\\\n   \\\\\\\\n \\\\\\\\n  Fox News   Shows    \\\\\\\\n \
+\\\\\\\\nExpand/Collapse Search  \\\\\\\\n                 \\\\\\\\n   \\\\\\\
+\\nHome Video Politics U\\\\\\\"\\\", \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\
+\", \\\"\\\\\\\"S\\\\\\\"\\\", \\\"}\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \
+\\\"\\\\\\\" Opinion Business Entertainment Tech Science Health Travel \
+Lifestyle World On Air        \\\\\\\\n \\\\\\\\n \\\\\\\\n \
+\\\\\\\\n\\\\\\\\n \\\\\\\\n     \\\\\\\\n   \\\\\\\\n  SPECIAL REPORT   \
+Dissecting Donald Trump's win over Hillary Clinton  \\\\\\\\n \\\\\\\\n  \
+Published November 09, 2016 \\\\\\\\n  FoxNews\\\\\\\"\\\", \\\"}\\\"}], \
+\\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"45\\\", \
+\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"{\\\", \\\"\\\\\\\" This \
+is a remarkable\\\\\\\\nthing that Donald Trump did\\\\\\\"\\\", \\\"}\\\"}], \
+\\\",\\\", RowBox[{\\\"{\\\", \\\"\\\\\\\" I thought his speech was actually \
+very good\\\\\\\\nand very smart\\\\\\\"\\\", \\\"}\\\"}], \\\",\\\", \
+RowBox[{\\\"\[LeftSkeleton]\\\", \\\"77\\\", \\\"\[RightSkeleton]\\\"}]}], \\\
+\"}\\\"}], \\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\"}], \\\"]\\\"}]\\).\"",2,22,22,
+   25660583510202926982,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.702726166707159*^9, 3.7027261774275756`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"StringSplit", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "{", "\<\"Fox News Fox Business Fox News Go Fox News Radio Fox Nation \
+Fox News Insider  \\n   \\n \\n  Fox News   Shows    \\n \\nExpand/Collapse \
+Search  \\n                 \\n   \\nHome Video Politics U\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"S\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Opinion Business Entertainment Tech Science Health Travel \
+Lifestyle World On Air        \\n \\n \\n \\n\\n \\n     \\n   \\n  SPECIAL \
+REPORT   Dissecting Donald Trump's win over Hillary Clinton  \\n \\n  \
+Published November 09, 2016 \\n  FoxNews\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\"com        \\n \\n  Facebook 0   Twitter 0   Email   Print    \
+\\n\\n \\n   Watch the latest video at video\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"foxnews\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\"com   \\nThis is a rush transcript from \\\"Special Report \
+with Bret Baier,\\\" November 9, 2016\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" This copy may not be in its final form and may be \
+updated\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(BEGIN VIDEO CLIPS) \\nPRESIDENT-ELECT DONALD TRUMP: Those \
+who have chosen not to\\nsupport me in the past -- of which there were a few \
+people -- I'm reaching\\nout to you for your guidance and your help so that \
+we can work together and\\nunify our great country\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Working together, we will begin the urgent task\\nof \
+rebuilding our nation and renewing the American dream\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nHILLARY CLINTON, DEMOCRATIC PRESIDENTIAL NOMINEE: We have \
+seen that our nation\\nis more deeply divided than we thought\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" But I still believe in America,\\nand I always will\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And if you do, then we must accept this result and \
+then\\nlook to the future\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" Donald Trump is going to be our president\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" We owe him\\nan open mind and the chance to lead\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" \\n(END VIDEO CLIPS) \\nBRET BAIER, ANCHOR: Donald Trump is \
+the president-elect today\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" As we look at the map\\nof the states that were called, red \
+obviously Republican, blue Democrat\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"\\nAnd you see some gray in there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" That's because we have not called those\\nstates as of \
+yet\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Here is why -- Michigan, 96 percent of the vote is in,\\nand \
+there you see it looks like Donald Trump is heading towards a \
+win\\nthere\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" But again, we're waiting for some other vote to come in\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" But it\\nlooks like we're going to be able to eventually to \
+call Michigan for Donald\\nTrump\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" In New Hampshire, 98 percent of the vote is in\"\>", "}"}], 
+     ",", 
+     RowBox[{"{", "\<\" It's not a big\\nstate\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I don't know why it takes so long to get all these votes, but \
+they\\nare still cooking\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Senator Ayotte has conceded to Maggie Hassan, the\\nDemocrat, \
+in that Senate race, but we have not called the presidential\\nrace\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nIn Arizona, in red Arizona, 75 percent is in because you \
+have a lot of\\nmail-in ballots that have to be counted\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And there you see Donald Trump\\neventually will probably get \
+another win there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nWith that, let's bring in our panel: Jonah Goldberg, \
+senior editor of National Review; Mercedes Schlapp, columnist for The \
+Washington Times; Mara Liasson, national political correspondent of National \
+Public Radio, and syndicated columnist Charles Krauthammer\"\>", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\" Mara, your thoughts\"\>", 
+       ",", "\<\" \\nMARA LIASSON, NATIONAL PUBLIC RADIO: Well, it was an \
+upset for the ages\"\>"}], "}"}], ",", 
+     RowBox[{
+     "{", "\<\"\\nAs we have been saying all night long, it was \
+incredible\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Everybody was\\nwrong, including Donald Trump who didn't \
+think he was going to win, but he\\ndid\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And he really did bust apart the coalitions and the maps for \
+both\\nparties\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think that the Republican party now is white working \
+class\\nparty\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" It has got the rustbelt now as part of its base\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" And the Democrats\\nare kind of trying to deal with their \
+shock and figuring out what went\\nwrong\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" In the circular firing squad department, I think they have a \
+couple\\npeople to aim at\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" James Comey, I hear a lot about, Anthony Weiner,\\nWikiLeaks \
+and Hillary Clinton herself who turned out to be a pretty weak\\ncandidate, a \
+lot of baggage, and a status quo candidate in a change\\nelection\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: If you look at policies of the next president \
+should be in the exit\\npolls, same as President Obama, 28 percent, more \
+conservative, 48 percent,\\nmore liberal, 17 percent\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Of those 17 percent, 22 percent of them voted\\nfor Donald \
+Trump\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" So that, Mercedes, is the Bernie Sanders vote I \
+would\\nassume\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nMERCEDES SCHLAPP, THE WASHINGTON TIMES: That's right\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: And those are probably people who did not talk to \
+the exit poll\\npeople because they said I'm not going to tell them that I'm \
+voting for\\nDonald Trump\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nSCHLAPP: And I also think it's a trade policy message they \
+were trying to\\npush through because when you think about it, Bernie \
+Sanders, first of all,\\nran against the status quo, secondly, talked about \
+the problems with trade,\\nwith TPP, with NAFTA\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" That's the same message that we have seen Donald\\nTrump push \
+forward in this election\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nAnd I think it's one of the reasons why Donald Trump has \
+just -- was\\nable to do so well in the rust belt states with the white \
+working class,\\nwhere they have seen manufacturing jobs leave their \
+communities, companies\\ngo away, and the opportunity for Donald Trump to \
+really hone in on that\\neconomic trade message which at the same time worked \
+with the Bernie\\nSanders supporters\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \\nBAIER: Jonah\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" You have never been a fan\"\>", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\" What did you think of the\\nspeech in what do you think \
+of president-elect Donald Trump\"\>", 
+       ",", "\<\" \\nJONAH GOLDBERG, NATIONAL REVIEW: Look, I've been eating \
+a\\nlot of crow, which tastes remarkably like black swan\"\>"}], "}"}], ",", 
+     RowBox[{
+     "{", "\<\" This is a remarkable\\nthing that Donald Trump did\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I thought his speech was actually very good\\nand very \
+smart\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I think the never-Trump movement is by definition\\nover, \
+because he won\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" We lost\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" You have to -- particularly if you are a\\nconservative, you \
+have to give him a fresh start and give him the benefit\\nof the doubt\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" If Hillary Clinton can do it, I can do it\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" \\nAnd I thought he did a very good job of sending that \
+signal\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think there\\nare a lot of pitfalls he could fall into with \
+that\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I do think -- and I\\ndon't want to take anything away from \
+his victory which was really\\nimpressive\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" It is really important to pick up on something that Mara said\
+\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"\\nThis was also Hillary Clinton's defeat\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" This was a really poor performance\\nby Hillary Clinton\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" Very low turnout from key constituencies\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" You had\\nless turnout overall than did you in 2004 for John \
+Kerry\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" We have got\\nsomething like 40 million more people on the \
+voter rolls\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" The Democratic\\nParty nominated literally the worst person \
+they could for a change election\\nand they rallied around it\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" And she was a bad candidate both in theory and\\nin \
+practice\"\>", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\" \\nBAIER: And what do you think this means for President \
+Obama's legacy\"\>", ",", "\<\"\\nWhat is this saying\"\>", 
+       ",", "\<\" Is it a repudiation of President Obama\"\>", 
+       ",", "\<\" \\nGOLDBERG: I think it is a direct outgrowth of it, and I \
+think it's really\\nbad news for Barack Obama's legacy\"\>"}], "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Barack Obama condescended from a great\\nheight upon his \
+political opponents for eight years\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" He had sort of an\\nOlympian disdain for anybody that \
+disagreed with more, as his party became\\nmore leftwing, more dismissive of \
+concerns of the working class, started\\ntalking opening about killing things \
+like the coal industry\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And it ticked\\noff a lot of people and rightly so\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" And Donald Trump tapped into that\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: You have also evolved since the beginning of our \
+panel talk of this\\nelection\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nCHARLES KRAUTHAMMER, SYNDICATED COLUMNIST: Yes\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" I have now reached sort\\nof a stage of -- I'm halfway \
+there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" There's no question that what Donald\\nTrump did was \
+historic, amazing\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" And he deserves all the credit for it\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\"\\nAs Paul Ryan said, he was the only one who heard the voice \
+out there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And\\nthat was the fact that the Reagan Democrats, the old \
+white working class\\nthat Reagan corralled, had gone away and nobody was \
+listening to that\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And\\nhe tuned in to that and that's how he won the \
+election\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nAnd I do think what's even more amazing is the fact that \
+whereas everybody\\nwas worrying on the Republican side that he would damage \
+the down ballot\\ncandidates, he actually had coattails and he helped to pull \
+some of the\\ndown ballot candidates over the finish line\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I agree secondly that the\\nother person responsible for \
+this Trump triumph is Hillary, probably the\\nworst candidate possibly one \
+could imagine\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBut I think what's overlooked is the role that Barack \
+Obama did\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Remember\\nhe said two years ago, I'm not on the ballot, but \
+my policies are, and he\\ngot shellacked\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Then he said, this year my legacy is on the ballot\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" And I\\nthink he's going to lose it\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think it's going to be undone, much of it,\\nin the first \
+100 days starting with Obamacare\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Everything that he signed,\\nall the executive orders are \
+gone\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I think he ends up a historic\\nparentheses\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" He left the Democrats in ruins at every level\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" The\\ngovernorships, the state houses, the House and the \
+Senate, and now the\\nWhite House\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" He has been a wrecking ball for Democrats, and I think \
+he\\ndeserves a lot of the credit for Trump's victory\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: Talk about Secretary Clinton, a lot of people \
+praising, Mara, the\\nspeech today where she emoted\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Obviously she talked about bringing the\\ncountry \
+together\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Let's listen to her last speech like this and this one\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(BEGIN VIDEO CLIP) \\nCLINTON: Although we weren't able to \
+shatter that highest, hardest glass\\nceiling this time, thanks to you, it \
+got about 18 million cracks in it\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\"\\nAnd the light is shining through like never before, filling \
+us all with the\\nhope and the sure knowledge that the panel will be a little \
+easier next\\ntime\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(APPLAUSE) \\nCLINTON: I know we have still not shattered \
+that highest and hardest glass\\nceiling\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" But some day someone will, and hopefully sooner than we might\
+\\nthink right now\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(APPLAUSE) \\n(END VIDEO CLIP) \\nBAIER: Just talking to \
+people in this town, they are catatonic today\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" I\\nthink that's a fair word\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Just anecdotally heard that shopping centers\\nwere \
+quiet\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" Washington, D\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"C\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" is elite establishment\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \\nLIASSON: It's a blue -- dark blue spot\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: As I said, this morning heads are exploding here \
+that they can't\\nbelieve it\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nLIASSON: I think they can't believe it for a number of \
+reasons, not just\\nthat it was a partisan ideological contest, but also that \
+for so many\\npeople, and I've heard this from Republicans who thought that \
+Donald Trump\\nwas beyond the pale and that he wasn't -- his demeanor, his \
+disregard for\\ndemocratic values and institutions, all of those things made \
+him\\nunthinkable\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I think the shock of it was also part of the reason \
+why\\nyou have got this reaction\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" The financial markets, the betting markets -- \\nBAIER: \
+Although they finished -- \\nLIASSON: They bounced back\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" They predicted that she would win\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" They\\nbuilt that in\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \\nBAIER: Finished the day at the highest\"\>", "}"}],
+      ",", 
+     RowBox[{"{", "\<\" Final word on this\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" I want to go\\nto the break\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nSCHLAPP: I have to say at the end this is a rejection of \
+Obama's legacy,\\nof his imperial presidency\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think when you look at the lack of\\nenthusiasm, the fact \
+that you saw these skyrocketing Obamacare premiums as\\nwell as the distress \
+of Hillary Clinton, it all played a role in weakening\\nHillary Clinton\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" And it gave Trump that advantage\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nContent and Programming Copyright 2016 Fox News Network, \
+LLC\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" ALL RIGHTS RESERVED\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" Copyright 2016 CQ-Roll Call, Inc\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" All materials herein are protected by United States copyright \
+law and may not be reproduced, distributed, transmitted, displayed, published \
+or broadcast without the prior written permission of CQ-Roll Call\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" You may not alter or remove any trademark, copyright or other \
+notice from copies of the content\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n       \\n \\n \\n \\n  Advertisement      \\n   \\n \\n   \
+\\n \\n         \\n   Trending on Fox News  \\n  1     North Korea: US bomber \
+flight pushes two countries on brink of nuclear war       2     Tucker \
+Carlson: White House Correspondents' Dinner 'an extended middle finger' to \
+Trump       3     'MOAB' aftermath: Fox News tours site where Afghanistan \
+bomb was dropped       4     Former Trump adviser says he's cooperating with \
+Senate Russian probe       5     Bible reading not allowed before class, \
+professor tells student      \\n     \\n \\n   \\n \\n \\n           \\n   \
+\\n\\n \\n\\n \\n\\n \\n \\n \\n \\n     \\n         \\n  Site Index       \
+Sections  \\nHome Video Politics U\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"S\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Opinion Entertainment Tech Science Health Travel Lifestyle \
+World Sports Weather On Air     Tools  \\nLive Video Trending Newsletters \
+Alerts Podcasts Radio Apps & Products     About  \\nCareers College Students \
+Fox Around the World Advertise With Us New Terms of Use (What's New) New \
+Privacy Policy Ad Choices Help Email Newsroom Media Relations Closed \
+Captioning Policy     Follow  \\nFacebook Twitter Google+ Instagram RSS \
+Newsletters  \\n  Fox News   Back to Top    \\nThis material may not be \
+published, broadcast, rewritten, or redistributed\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \[Copyright]2017 FOX News Network, LLC\"\>", "}"}], 
+     ",", 
+     RowBox[{"{", "\<\" All rights reserved\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" All market data delayed 20 minutes\"\>", "}"}]}], 
+    "}"}], ",", "\<\",\"\>"}], "]"}]], "Output",
+ CellChangeTimes->{{3.7027261667121644`*^9, 3.702726177458595*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Classify", "[", 
+  RowBox[{"\"\<Sentiment\>\"", ",", "d"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7027262694151554`*^9, 3.7027262830719275`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "ClassifierFunction","mlincfttp",
+   "\"Incompatible variable type (\\!\\(\\*RowBox[{\\\"\\\\\\\"Text\\\\\\\"\\\
+\"}]\\)) and variable value (\\!\\(\\*RowBox[{\\\"{\\\", \\\"\\\\\\\"Fox News \
+Fox Business Fox News Go Fox News Radio Fox Nation Fox News Insider  \
+\\\\\\\\n   \\\\\\\\n \\\\\\\\n  Fox News   Shows    \\\\\\\\n \
+\\\\\\\\nExpand/Collapse Search  \\\\\\\\n                 \\\\\\\\n   \\\\\\\
+\\nHome Video Politics U\\\\\\\"\\\", \\\"}\\\"}]\\)).\"",2,25,25,
+   25660583510202926982,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.702726271098802*^9, 3.7027262895711594`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[
+   TemplateBox[{RowBox[{
+       StyleBox[
+        TagBox["ClassifierFunction", "SummaryHead"], 
+        "NonInterpretableSummary"], 
+       StyleBox["[", "NonInterpretableSummary"], 
+       DynamicModuleBox[{Typeset`open$$ = False}, 
+        PanelBox[
+         PaneSelectorBox[{False -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquarePlusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Sentiment\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["3", "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}], True -> GridBox[{{
+               PaneBox[
+                ButtonBox[
+                 DynamicBox[
+                  FEPrivate`FrontEndResource[
+                  "FEBitmaps", "SquareMinusIconMedium"]], 
+                 ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                 None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                Alignment -> {Center, Center}, ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}]], 
+               GraphicsBox[{{
+                  PointSize[0.13], 
+                  GrayLevel[0.45], 
+                  
+                  PointBox[{{0.9821769431797024, -0.440194219686987}, {
+                   1.1339776261519132`, 0.8056918676854272}, {
+                   0.5279892326667741, 0.6574306661126254}, {
+                   0.022147046479890797`, 1.4937877187998898`}}], 
+                  GrayLevel[0.7], 
+                  
+                  PointBox[{{-0.9815166384819979, 
+                   0.15045697525228735`}, {-0.5923526886966953, \
+-0.33441771553094035`}, {-0.005656646679640442, -1.462421365651345}, \
+{-1.0734370436522753`, -1.3729645043477454`}}]}, {
+                  GrayLevel[0.55], 
+                  AbsoluteThickness[1.5], 
+                  LineBox[{{-1., 1.5}, {1, -1.6}}]}}, {
+                Axes -> {False, False}, AxesLabel -> {None, None}, 
+                 AxesOrigin -> {0, 0}, BaseStyle -> {FontFamily -> "Arial", 
+                   AbsoluteThickness[1.5]}, DisplayFunction -> Identity, 
+                 Frame -> {{True, True}, {True, True}}, 
+                 FrameLabel -> {{None, None}, {None, None}}, FrameStyle -> 
+                 Directive[
+                   Thickness[Tiny], 
+                   GrayLevel[0.7]], 
+                 FrameTicks -> {{None, None}, {None, None}}, 
+                 GridLines -> {None, None}, 
+                 LabelStyle -> {FontFamily -> "Arial"}, 
+                 Method -> {"ScalingFunctions" -> None}, 
+                 PlotRange -> {{-1., 1}, {-1.3, 1.1}}, PlotRangeClipping -> 
+                 True, PlotRangePadding -> {{0.7, 0.7}, {0.7, 0.7}}, 
+                 Ticks -> {None, None}}, Axes -> False, AspectRatio -> 1, 
+                ImageSize -> 
+                Dynamic[{
+                  Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                   AbsoluteCurrentValue[Magnification]}], Frame -> True, 
+                FrameTicks -> None, FrameStyle -> Directive[
+                  Opacity[0.5], 
+                  Thickness[Tiny], 
+                  RGBColor[0.368417, 0.506779, 0.709798]]], 
+               GridBox[{{
+                  RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Sentiment\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of classes: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["3", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox["\"Feature type: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Text\"", "SummaryItem"]}]}, {
+                  RowBox[{
+                    TagBox[
+                    "\"Number of training examples: \"", 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}}, 
+                GridBoxAlignment -> {
+                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                False, GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                GridBoxSpacings -> {
+                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                BaseStyle -> {
+                 ShowStringCharacters -> False, NumberMarks -> False, 
+                  PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+             GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             BaselinePosition -> {1, 1}]}, 
+          Dynamic[Typeset`open$$], ImageSize -> Automatic], BaselinePosition -> 
+         Baseline], DynamicModuleValues :> {}], 
+       StyleBox["]", "NonInterpretableSummary"]}]},
+    "CopyTag",
+    DisplayFunction->(#& ),
+    InterpretationFunction->("ClassifierFunction[\[Ellipsis]]"& )],
+   False,
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+     "{", "\<\"Fox News Fox Business Fox News Go Fox News Radio Fox Nation \
+Fox News Insider  \\n   \\n \\n  Fox News   Shows    \\n \\nExpand/Collapse \
+Search  \\n                 \\n   \\nHome Video Politics U\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"S\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Opinion Business Entertainment Tech Science Health Travel \
+Lifestyle World On Air        \\n \\n \\n \\n\\n \\n     \\n   \\n  SPECIAL \
+REPORT   Dissecting Donald Trump's win over Hillary Clinton  \\n \\n  \
+Published November 09, 2016 \\n  FoxNews\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\"com        \\n \\n  Facebook 0   Twitter 0   Email   Print    \
+\\n\\n \\n   Watch the latest video at video\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"foxnews\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\"com   \\nThis is a rush transcript from \\\"Special Report \
+with Bret Baier,\\\" November 9, 2016\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" This copy may not be in its final form and may be \
+updated\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(BEGIN VIDEO CLIPS) \\nPRESIDENT-ELECT DONALD TRUMP: Those \
+who have chosen not to\\nsupport me in the past -- of which there were a few \
+people -- I'm reaching\\nout to you for your guidance and your help so that \
+we can work together and\\nunify our great country\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Working together, we will begin the urgent task\\nof \
+rebuilding our nation and renewing the American dream\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nHILLARY CLINTON, DEMOCRATIC PRESIDENTIAL NOMINEE: We have \
+seen that our nation\\nis more deeply divided than we thought\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" But I still believe in America,\\nand I always will\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And if you do, then we must accept this result and \
+then\\nlook to the future\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" Donald Trump is going to be our president\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" We owe him\\nan open mind and the chance to lead\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" \\n(END VIDEO CLIPS) \\nBRET BAIER, ANCHOR: Donald Trump is \
+the president-elect today\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" As we look at the map\\nof the states that were called, red \
+obviously Republican, blue Democrat\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"\\nAnd you see some gray in there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" That's because we have not called those\\nstates as of \
+yet\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Here is why -- Michigan, 96 percent of the vote is in,\\nand \
+there you see it looks like Donald Trump is heading towards a \
+win\\nthere\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" But again, we're waiting for some other vote to come in\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" But it\\nlooks like we're going to be able to eventually to \
+call Michigan for Donald\\nTrump\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" In New Hampshire, 98 percent of the vote is in\"\>", "}"}], 
+     ",", 
+     RowBox[{"{", "\<\" It's not a big\\nstate\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I don't know why it takes so long to get all these votes, but \
+they\\nare still cooking\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Senator Ayotte has conceded to Maggie Hassan, the\\nDemocrat, \
+in that Senate race, but we have not called the presidential\\nrace\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nIn Arizona, in red Arizona, 75 percent is in because you \
+have a lot of\\nmail-in ballots that have to be counted\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And there you see Donald Trump\\neventually will probably get \
+another win there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nWith that, let's bring in our panel: Jonah Goldberg, \
+senior editor of National Review; Mercedes Schlapp, columnist for The \
+Washington Times; Mara Liasson, national political correspondent of National \
+Public Radio, and syndicated columnist Charles Krauthammer\"\>", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\" Mara, your thoughts\"\>", 
+       ",", "\<\" \\nMARA LIASSON, NATIONAL PUBLIC RADIO: Well, it was an \
+upset for the ages\"\>"}], "}"}], ",", 
+     RowBox[{
+     "{", "\<\"\\nAs we have been saying all night long, it was \
+incredible\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Everybody was\\nwrong, including Donald Trump who didn't \
+think he was going to win, but he\\ndid\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And he really did bust apart the coalitions and the maps for \
+both\\nparties\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think that the Republican party now is white working \
+class\\nparty\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" It has got the rustbelt now as part of its base\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" And the Democrats\\nare kind of trying to deal with their \
+shock and figuring out what went\\nwrong\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" In the circular firing squad department, I think they have a \
+couple\\npeople to aim at\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" James Comey, I hear a lot about, Anthony Weiner,\\nWikiLeaks \
+and Hillary Clinton herself who turned out to be a pretty weak\\ncandidate, a \
+lot of baggage, and a status quo candidate in a change\\nelection\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: If you look at policies of the next president \
+should be in the exit\\npolls, same as President Obama, 28 percent, more \
+conservative, 48 percent,\\nmore liberal, 17 percent\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Of those 17 percent, 22 percent of them voted\\nfor Donald \
+Trump\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" So that, Mercedes, is the Bernie Sanders vote I \
+would\\nassume\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nMERCEDES SCHLAPP, THE WASHINGTON TIMES: That's right\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: And those are probably people who did not talk to \
+the exit poll\\npeople because they said I'm not going to tell them that I'm \
+voting for\\nDonald Trump\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nSCHLAPP: And I also think it's a trade policy message they \
+were trying to\\npush through because when you think about it, Bernie \
+Sanders, first of all,\\nran against the status quo, secondly, talked about \
+the problems with trade,\\nwith TPP, with NAFTA\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" That's the same message that we have seen Donald\\nTrump push \
+forward in this election\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nAnd I think it's one of the reasons why Donald Trump has \
+just -- was\\nable to do so well in the rust belt states with the white \
+working class,\\nwhere they have seen manufacturing jobs leave their \
+communities, companies\\ngo away, and the opportunity for Donald Trump to \
+really hone in on that\\neconomic trade message which at the same time worked \
+with the Bernie\\nSanders supporters\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \\nBAIER: Jonah\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" You have never been a fan\"\>", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\" What did you think of the\\nspeech in what do you think \
+of president-elect Donald Trump\"\>", 
+       ",", "\<\" \\nJONAH GOLDBERG, NATIONAL REVIEW: Look, I've been eating \
+a\\nlot of crow, which tastes remarkably like black swan\"\>"}], "}"}], ",", 
+     RowBox[{
+     "{", "\<\" This is a remarkable\\nthing that Donald Trump did\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I thought his speech was actually very good\\nand very \
+smart\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I think the never-Trump movement is by definition\\nover, \
+because he won\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" We lost\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" You have to -- particularly if you are a\\nconservative, you \
+have to give him a fresh start and give him the benefit\\nof the doubt\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" If Hillary Clinton can do it, I can do it\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" \\nAnd I thought he did a very good job of sending that \
+signal\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think there\\nare a lot of pitfalls he could fall into with \
+that\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I do think -- and I\\ndon't want to take anything away from \
+his victory which was really\\nimpressive\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" It is really important to pick up on something that Mara said\
+\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"\\nThis was also Hillary Clinton's defeat\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" This was a really poor performance\\nby Hillary Clinton\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" Very low turnout from key constituencies\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" You had\\nless turnout overall than did you in 2004 for John \
+Kerry\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" We have got\\nsomething like 40 million more people on the \
+voter rolls\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" The Democratic\\nParty nominated literally the worst person \
+they could for a change election\\nand they rallied around it\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" And she was a bad candidate both in theory and\\nin \
+practice\"\>", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\" \\nBAIER: And what do you think this means for President \
+Obama's legacy\"\>", ",", "\<\"\\nWhat is this saying\"\>", 
+       ",", "\<\" Is it a repudiation of President Obama\"\>", 
+       ",", "\<\" \\nGOLDBERG: I think it is a direct outgrowth of it, and I \
+think it's really\\nbad news for Barack Obama's legacy\"\>"}], "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Barack Obama condescended from a great\\nheight upon his \
+political opponents for eight years\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" He had sort of an\\nOlympian disdain for anybody that \
+disagreed with more, as his party became\\nmore leftwing, more dismissive of \
+concerns of the working class, started\\ntalking opening about killing things \
+like the coal industry\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And it ticked\\noff a lot of people and rightly so\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" And Donald Trump tapped into that\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: You have also evolved since the beginning of our \
+panel talk of this\\nelection\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nCHARLES KRAUTHAMMER, SYNDICATED COLUMNIST: Yes\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" I have now reached sort\\nof a stage of -- I'm halfway \
+there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" There's no question that what Donald\\nTrump did was \
+historic, amazing\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" And he deserves all the credit for it\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\"\\nAs Paul Ryan said, he was the only one who heard the voice \
+out there\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And\\nthat was the fact that the Reagan Democrats, the old \
+white working class\\nthat Reagan corralled, had gone away and nobody was \
+listening to that\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And\\nhe tuned in to that and that's how he won the \
+election\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nAnd I do think what's even more amazing is the fact that \
+whereas everybody\\nwas worrying on the Republican side that he would damage \
+the down ballot\\ncandidates, he actually had coattails and he helped to pull \
+some of the\\ndown ballot candidates over the finish line\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I agree secondly that the\\nother person responsible for \
+this Trump triumph is Hillary, probably the\\nworst candidate possibly one \
+could imagine\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBut I think what's overlooked is the role that Barack \
+Obama did\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Remember\\nhe said two years ago, I'm not on the ballot, but \
+my policies are, and he\\ngot shellacked\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Then he said, this year my legacy is on the ballot\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" And I\\nthink he's going to lose it\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think it's going to be undone, much of it,\\nin the first \
+100 days starting with Obamacare\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Everything that he signed,\\nall the executive orders are \
+gone\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I think he ends up a historic\\nparentheses\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" He left the Democrats in ruins at every level\"\>", "}"}], 
+     ",", 
+     RowBox[{
+     "{", "\<\" The\\ngovernorships, the state houses, the House and the \
+Senate, and now the\\nWhite House\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" He has been a wrecking ball for Democrats, and I think \
+he\\ndeserves a lot of the credit for Trump's victory\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: Talk about Secretary Clinton, a lot of people \
+praising, Mara, the\\nspeech today where she emoted\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Obviously she talked about bringing the\\ncountry \
+together\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Let's listen to her last speech like this and this one\"\>", 
+      "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(BEGIN VIDEO CLIP) \\nCLINTON: Although we weren't able to \
+shatter that highest, hardest glass\\nceiling this time, thanks to you, it \
+got about 18 million cracks in it\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\"\\nAnd the light is shining through like never before, filling \
+us all with the\\nhope and the sure knowledge that the panel will be a little \
+easier next\\ntime\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(APPLAUSE) \\nCLINTON: I know we have still not shattered \
+that highest and hardest glass\\nceiling\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" But some day someone will, and hopefully sooner than we might\
+\\nthink right now\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n(APPLAUSE) \\n(END VIDEO CLIP) \\nBAIER: Just talking to \
+people in this town, they are catatonic today\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" I\\nthink that's a fair word\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Just anecdotally heard that shopping centers\\nwere \
+quiet\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" Washington, D\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"C\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" is elite establishment\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \\nLIASSON: It's a blue -- dark blue spot\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" \\nBAIER: As I said, this morning heads are exploding here \
+that they can't\\nbelieve it\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nLIASSON: I think they can't believe it for a number of \
+reasons, not just\\nthat it was a partisan ideological contest, but also that \
+for so many\\npeople, and I've heard this from Republicans who thought that \
+Donald Trump\\nwas beyond the pale and that he wasn't -- his demeanor, his \
+disregard for\\ndemocratic values and institutions, all of those things made \
+him\\nunthinkable\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" And I think the shock of it was also part of the reason \
+why\\nyou have got this reaction\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" The financial markets, the betting markets -- \\nBAIER: \
+Although they finished -- \\nLIASSON: They bounced back\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" They predicted that she would win\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" They\\nbuilt that in\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \\nBAIER: Finished the day at the highest\"\>", "}"}],
+      ",", 
+     RowBox[{"{", "\<\" Final word on this\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" I want to go\\nto the break\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nSCHLAPP: I have to say at the end this is a rejection of \
+Obama's legacy,\\nof his imperial presidency\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" I think when you look at the lack of\\nenthusiasm, the fact \
+that you saw these skyrocketing Obamacare premiums as\\nwell as the distress \
+of Hillary Clinton, it all played a role in weakening\\nHillary Clinton\"\>", 
+      "}"}], ",", 
+     RowBox[{"{", "\<\" And it gave Trump that advantage\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\nContent and Programming Copyright 2016 Fox News Network, \
+LLC\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" ALL RIGHTS RESERVED\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" Copyright 2016 CQ-Roll Call, Inc\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" All materials herein are protected by United States copyright \
+law and may not be reproduced, distributed, transmitted, displayed, published \
+or broadcast without the prior written permission of CQ-Roll Call\"\>", "}"}],
+      ",", 
+     RowBox[{
+     "{", "\<\" You may not alter or remove any trademark, copyright or other \
+notice from copies of the content\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" \\n       \\n \\n \\n \\n  Advertisement      \\n   \\n \\n   \
+\\n \\n         \\n   Trending on Fox News  \\n  1     North Korea: US bomber \
+flight pushes two countries on brink of nuclear war       2     Tucker \
+Carlson: White House Correspondents' Dinner 'an extended middle finger' to \
+Trump       3     'MOAB' aftermath: Fox News tours site where Afghanistan \
+bomb was dropped       4     Former Trump adviser says he's cooperating with \
+Senate Russian probe       5     Bible reading not allowed before class, \
+professor tells student      \\n     \\n \\n   \\n \\n \\n           \\n   \
+\\n\\n \\n\\n \\n\\n \\n \\n \\n \\n     \\n         \\n  Site Index       \
+Sections  \\nHome Video Politics U\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\"S\"\>", "}"}], ",", 
+     RowBox[{
+     "{", "\<\" Opinion Entertainment Tech Science Health Travel Lifestyle \
+World Sports Weather On Air     Tools  \\nLive Video Trending Newsletters \
+Alerts Podcasts Radio Apps & Products     About  \\nCareers College Students \
+Fox Around the World Advertise With Us New Terms of Use (What's New) New \
+Privacy Policy Ad Choices Help Email Newsroom Media Relations Closed \
+Captioning Policy     Follow  \\nFacebook Twitter Google+ Instagram RSS \
+Newsletters  \\n  Fox News   Back to Top    \\nThis material may not be \
+published, broadcast, rewritten, or redistributed\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" \[Copyright]2017 FOX News Network, LLC\"\>", "}"}], 
+     ",", 
+     RowBox[{"{", "\<\" All rights reserved\"\>", "}"}], ",", 
+     RowBox[{"{", "\<\" All market data delayed 20 minutes\"\>", "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"PerformanceGoal", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"IndeterminateThreshold", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"UtilityFunction", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"\<\"BatchProcessing\"\>", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ClassPriors", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"\<\"TieBreakerFunction\"\>", "\[Rule]", "RandomChoice"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{{3.7027262711088114`*^9, 3.7027262896231956`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"newstring", " ", "=", " ", "\"\<\>"}]], "Input",
+ CellChangeTimes->{{3.702745798221568*^9, 3.7027458503452406`*^9}},
+ NumberMarks->False]
+},
+WindowSize->{1234, 740},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>0.8 Inherited,
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 567, 12, 40, "Input"],
+Cell[CellGroupData[{
+Cell[1150, 36, 10633, 142, 850, InheritFromParent],
+Cell[11786, 180, 10474, 138, 2290, "Output"]
+}, Open  ]],
+Cell[22275, 321, 424, 8, 24, "Input"],
+Cell[CellGroupData[{
+Cell[22724, 333, 279, 5, 24, "Input"],
+Cell[23006, 340, 1942, 28, 214, "Message"],
+Cell[24951, 370, 22204, 388, 2377, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47192, 763, 81, 2, 24, "Input"],
+Cell[47276, 767, 390, 11, 24, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47703, 783, 852, 16, 24, "Input"],
+Cell[48558, 801, 3443, 52, 49, "Message"],
+Cell[52004, 855, 3975, 61, 100, "Output"]
+}, Open  ]],
+Cell[55994, 919, 145, 2, 24, InheritFromParent],
+Cell[CellGroupData[{
+Cell[56164, 925, 187, 4, 24, "Input"],
+Cell[56354, 931, 18706, 385, 3325, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75097, 1321, 189, 4, 24, "Input"],
+Cell[75289, 1327, 1669, 25, 334, "Message"],
+Cell[76961, 1354, 19323, 391, 3325, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[96321, 1750, 170, 3, 24, "Input"],
+Cell[96494, 1755, 648, 11, 139, "Message"],
+Cell[97145, 1768, 28531, 575, 3412, "Output"]
+}, Open  ]],
+Cell[125691, 2346, 161, 3, 24, "Input"]
+}
+]
+*)
+

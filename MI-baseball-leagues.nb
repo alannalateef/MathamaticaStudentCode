@@ -1,0 +1,322 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10835,        312]
+NotebookOptionsPosition[      8757,        253]
+NotebookOutlinePosition[      9131,        269]
+CellTagsIndexPosition[      9088,        266]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"data", "=", 
+   RowBox[{
+   "Import", "[", 
+    "\"\<C:\\\\\\\\Users\\\\\\\\Hiroki\\\\\\\\Desktop\\\\\\\\Book1.csv\>\"", 
+    "]"}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.6998758887540846`*^9, 3.6998759024875097`*^9}, {
+  3.699875994260471*^9, 3.6998760124541025`*^9}, {3.699876789430671*^9, 
+  3.699876791224674*^9}},ExpressionUUID->"6bd843e9-48ab-431e-8800-\
+5d4a9c3e35eb"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Year \"\>", ",", "\<\"X (American) \"\>", 
+     ",", "\<\"Y (National) \"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2000", ",", "\<\"Yankees \"\>", ",", "\<\"Mets \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2001", ",", "\<\"Yankees\"\>", ",", "\<\"Diamondbacks \"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2002", ",", "\<\"Angels \"\>", ",", "\<\"Giants \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2003", ",", "\<\"Yankees\"\>", ",", "\<\"Marlins \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2004", ",", "\<\"Red Sox \"\>", ",", "\<\"Cardinals \"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2005", ",", "\<\"White Sox \"\>", ",", "\<\"Astros \"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2006", ",", "\<\"Tigers \"\>", ",", "\<\"Cardinals \"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2007", ",", "\<\"Red Sox \"\>", ",", "\<\"Rockies \"\>"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"2008", ",", "\<\"Rays \"\>", ",", "\<\"Phillies \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2009", ",", "\<\"Yankees\"\>", ",", "\<\"Phillies \"\>"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"2010", ",", "\<\"Rangers \"\>", ",", "\<\"Giants \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2011", ",", "\<\"Rangers \"\>", ",", "\<\"Cardinals \"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2012", ",", "\<\"Tigers \"\>", ",", "\<\"Giants \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2013", ",", "\<\"Red Sox \"\>", ",", "\<\"Cardinals \"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"2014", ",", "\<\"Royals \"\>", ",", "\<\"Giants \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2015", ",", "\<\"Royals \"\>", ",", "\<\"Mets \"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"2016", ",", "\<\"Indians \"\>", ",", "\<\"Cubs \"\>"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.6998760141077056`*^9},ExpressionUUID->"29bb4cfc-db20-4890-888a-\
+90911fba53cd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"X", "=", 
+   RowBox[{"StringTrim", "/@", 
+    RowBox[{"data", "[", 
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{"2", ";;"}], ",", "2"}], "]"}], "]"}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.6998760394627504`*^9, 3.699876047762965*^9}, {
+  3.6998765508736515`*^9, 3.699876553166855*^9}, {3.6998767972306848`*^9, 
+  3.6998767988374877`*^9}},ExpressionUUID->"f771fe87-0c7a-46c7-80a8-\
+1f682fb79d2d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Yankees\"\>", ",", "\<\"Yankees\"\>", ",", "\<\"Angels\"\>", 
+   ",", "\<\"Yankees\"\>", ",", "\<\"Red Sox\"\>", ",", "\<\"White Sox\"\>", 
+   ",", "\<\"Tigers\"\>", ",", "\<\"Red Sox\"\>", ",", "\<\"Rays\"\>", 
+   ",", "\<\"Yankees\"\>", ",", "\<\"Rangers\"\>", ",", "\<\"Rangers\"\>", 
+   ",", "\<\"Tigers\"\>", ",", "\<\"Red Sox\"\>", ",", "\<\"Royals\"\>", 
+   ",", "\<\"Royals\"\>", ",", "\<\"Indians\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.6998760483089657`*^9, 
+  3.6998765541028566`*^9},ExpressionUUID->"99415f8b-c1df-442d-89db-\
+d3bee611c2cb"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"X", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Yankees\>\"", ",", "\"\<Yankees\>\"", ",", "\"\<Angels\>\"", ",", 
+     "\"\<Yankees\>\"", ",", "\"\<Red Sox\>\"", ",", "\"\<White Sox\>\"", 
+     ",", "\"\<Tigers\>\"", ",", "\"\<Red Sox\>\"", ",", "\"\<Rays\>\"", ",", 
+     "\"\<Yankees\>\"", ",", "\"\<Rangers\>\"", ",", "\"\<Rangers\>\"", ",", 
+     "\"\<Tigers\>\"", ",", "\"\<Red Sox\>\"", ",", "\"\<Royals\>\"", ",", 
+     "\"\<Royals\>\"", ",", "\"\<Indians\>\""}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6998768014114923`*^9, 
+  3.6998768195525265`*^9}},ExpressionUUID->"54e1ad67-5440-47ff-a74d-\
+41d6ecb5456e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Y", "=", 
+   RowBox[{"StringTrim", "/@", 
+    RowBox[{"data", "[", 
+     RowBox[{"[", 
+      RowBox[{
+       RowBox[{"2", ";;"}], ",", "3"}], "]"}], "]"}]}]}], "*)"}]], "Input",
+ CellChangeTimes->{{3.6998760504773703`*^9, 3.699876055126178*^9}, {
+  3.69987655603726*^9, 3.6998765588452654`*^9}, {3.6998768091199055`*^9, 
+  3.6998768105415087`*^9}},ExpressionUUID->"aebb010b-63fd-4f54-b6a8-\
+db8b395feb94"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Mets\"\>", ",", "\<\"Diamondbacks\"\>", ",", "\<\"Giants\"\>", 
+   ",", "\<\"Marlins\"\>", ",", "\<\"Cardinals\"\>", ",", "\<\"Astros\"\>", 
+   ",", "\<\"Cardinals\"\>", ",", "\<\"Rockies\"\>", ",", "\<\"Phillies\"\>", 
+   ",", "\<\"Phillies\"\>", ",", "\<\"Giants\"\>", ",", "\<\"Cardinals\"\>", 
+   ",", "\<\"Giants\"\>", ",", "\<\"Cardinals\"\>", ",", "\<\"Giants\"\>", 
+   ",", "\<\"Mets\"\>", ",", "\<\"Cubs\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.6998760555629787`*^9, 
+  3.6998765591280656`*^9},ExpressionUUID->"0a2bd939-f058-47a0-82a7-\
+93d09a267ae2"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Y", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Mets\>\"", ",", "\"\<Diamondbacks\>\"", ",", "\"\<Giants\>\"", ",", 
+     "\"\<Marlins\>\"", ",", "\"\<Cardinals\>\"", ",", "\"\<Astros\>\"", ",", 
+     "\"\<Cardinals\>\"", ",", "\"\<Rockies\>\"", ",", "\"\<Phillies\>\"", 
+     ",", "\"\<Phillies\>\"", ",", "\"\<Giants\>\"", ",", "\"\<Cardinals\>\"",
+      ",", "\"\<Giants\>\"", ",", "\"\<Cardinals\>\"", ",", "\"\<Giants\>\"", 
+     ",", "\"\<Mets\>\"", ",", "\"\<Cubs\>\""}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6998768124797134`*^9, 
+  3.6998768156153193`*^9}},ExpressionUUID->"ff5ec968-f61f-4efd-812b-\
+632e32c87ec1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HX", "=", 
+  RowBox[{
+   RowBox[{"Entropy", "[", 
+    RowBox[{"2", ",", "X"}], "]"}], "//", "N"}]}]], "Input",
+ CellChangeTimes->{{3.699876140698329*^9, 
+  3.6998761823262024`*^9}},ExpressionUUID->"dd32c946-89aa-4639-a5d6-\
+3f1dbe062fce"],
+
+Cell[BoxData["2.984234164652488`"], "Output",
+ CellChangeTimes->{{3.6998761439909344`*^9, 3.6998761524169493`*^9}, 
+   3.6998761827006025`*^9, 3.6998765599548674`*^9, 
+   3.6998768244685354`*^9},ExpressionUUID->"14e8bfff-bfda-4ee9-a98f-\
+7631ca0a3d05"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HY", "=", 
+  RowBox[{
+   RowBox[{"Entropy", "[", 
+    RowBox[{"2", ",", "Y"}], "]"}], "//", "N"}]}]], "Input",
+ CellChangeTimes->{{3.6998761540081525`*^9, 
+  3.699876184962607*^9}},ExpressionUUID->"28c22384-1362-4b0f-9375-\
+14a842c1f3d1"],
+
+Cell[BoxData["2.9109922530150456`"], "Output",
+ CellChangeTimes->{{3.69987615826696*^9, 3.6998761853214073`*^9}, 
+   3.6998765625288715`*^9, 
+   3.69987682696554*^9},ExpressionUUID->"35e8de13-ab13-4ab5-8f78-\
+01aff46266e2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HXY", "=", 
+  RowBox[{
+   RowBox[{"Entropy", "[", 
+    RowBox[{"2", ",", 
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"X", ",", "Y"}], "}"}], "]"}]}], "]"}], "//", "N"}]}]], "Input",
+ CellChangeTimes->{{3.6998761634149685`*^9, 
+  3.6998761871466107`*^9}},ExpressionUUID->"9c58be2f-cd1d-412d-9a65-\
+c41cb15338aa"],
+
+Cell[BoxData["3.96981578242681`"], "Output",
+ CellChangeTimes->{{3.6998761758979907`*^9, 3.699876187474211*^9}, 
+   3.6998765640576744`*^9, 
+   3.699876828244742*^9},ExpressionUUID->"78621322-3aa7-48ea-86b7-\
+15e5c0485e3d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"HX", "+", "HY", "-", "HXY"}]], "Input",
+ CellChangeTimes->{{3.6998761886130133`*^9, 
+  3.6998761924506197`*^9}},ExpressionUUID->"a1a110a6-2b9f-4471-a6f8-\
+952c9cfdb457"],
+
+Cell[BoxData["1.9254106352407234`"], "Output",
+ CellChangeTimes->{3.6998761928718204`*^9, 3.699876565024876*^9, 
+  3.6998768299139447`*^9},ExpressionUUID->"d26ac7cf-9657-4f13-b45f-\
+d3823f9ce03f"]
+}, Open  ]]
+},
+WindowSize->{1280, 654},
+WindowMargins->{{-4, Automatic}, {Automatic, -4}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (March 13, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 420, 10, 46, "Input", "ExpressionUUID" -> \
+"6bd843e9-48ab-431e-8800-5d4a9c3e35eb"],
+Cell[1003, 34, 2083, 59, 192, "Output", "ExpressionUUID" -> \
+"29bb4cfc-db20-4890-888a-90911fba53cd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3123, 98, 447, 11, 46, "Input", "ExpressionUUID" -> \
+"f771fe87-0c7a-46c7-80a8-1f682fb79d2d"],
+Cell[3573, 111, 603, 10, 76, "Output", "ExpressionUUID" -> \
+"99415f8b-c1df-442d-89db-d3bee611c2cb"]
+}, Open  ]],
+Cell[4191, 124, 663, 13, 76, "Input", "ExpressionUUID" -> \
+"54e1ad67-5440-47ff-a74d-41d6ecb5456e"],
+Cell[CellGroupData[{
+Cell[4879, 141, 446, 11, 46, "Input", "ExpressionUUID" -> \
+"aebb010b-63fd-4f54-b6a8-db8b395feb94"],
+Cell[5328, 154, 610, 10, 76, "Output", "ExpressionUUID" -> \
+"0a2bd939-f058-47a0-82a7-93d09a267ae2"]
+}, Open  ]],
+Cell[5953, 167, 670, 13, 76, "Input", "ExpressionUUID" -> \
+"ff5ec968-f61f-4efd-812b-632e32c87ec1"],
+Cell[CellGroupData[{
+Cell[6648, 184, 262, 7, 46, "Input", "ExpressionUUID" -> \
+"dd32c946-89aa-4639-a5d6-3f1dbe062fce"],
+Cell[6913, 193, 252, 4, 46, "Output", "ExpressionUUID" -> \
+"14e8bfff-bfda-4ee9-a98f-7631ca0a3d05"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7202, 202, 262, 7, 46, "Input", "ExpressionUUID" -> \
+"28c22384-1362-4b0f-9375-14a842c1f3d1"],
+Cell[7467, 211, 223, 4, 46, "Output", "ExpressionUUID" -> \
+"35e8de13-ab13-4ab5-8f78-01aff46266e2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7727, 220, 359, 10, 46, "Input", "ExpressionUUID" -> \
+"9c58be2f-cd1d-412d-9a65-c41cb15338aa"],
+Cell[8089, 232, 223, 4, 46, "Output", "ExpressionUUID" -> \
+"78621322-3aa7-48ea-86b7-15e5c0485e3d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8349, 241, 193, 4, 46, "Input", "ExpressionUUID" -> \
+"a1a110a6-2b9f-4471-a6f8-952c9cfdb457"],
+Cell[8545, 247, 196, 3, 79, "Output", "ExpressionUUID" -> \
+"d26ac7cf-9657-4f13-b45f-d3823f9ce03f"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

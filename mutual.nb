@@ -1,0 +1,126 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4130,        118]
+NotebookOptionsPosition[      3777,        101]
+NotebookOutlinePosition[      4123,        116]
+CellTagsIndexPosition[      4080,        113]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6998755432300177`*^9, 3.699875553132403*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Transpose", "[", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "yankees", ",", " ", "yankees", ",", " ", "angels", ",", " ", "yankees",
+        ",", " ", 
+       RowBox[{"red", " ", "sox"}], ",", " ", 
+       RowBox[{"white", " ", "sox"}], ",", " ", "tigers", ",", " ", 
+       RowBox[{"red", " ", "sox"}], ",", " ", "rays", ",", " ", "yankees", 
+       ",", " ", "rangers", ",", " ", "rangers", ",", " ", "tigers", ",", " ", 
+       RowBox[{"red", " ", "sox"}], ",", " ", "royals", ",", " ", "royals", 
+       ",", " ", "indians"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "mets", ",", " ", "diamondbacks", ",", " ", "giants", ",", " ", 
+       "marlins", ",", " ", "cardinals", ",", " ", "astros", ",", " ", 
+       "cardinals", ",", " ", "rockies", ",", " ", "phillies", ",", " ", 
+       "phillies", ",", " ", "giants", ",", " ", "cardinals", ",", " ", 
+       "giants", ",", " ", "cardinals", ",", " ", "giants", ",", " ", "mets", 
+       ",", " ", "cubs"}], "}"}]}], "}"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.699875750210267*^9, 3.6998760384427967`*^9}, {
+  3.699876114299542*^9, 3.6998761336513424`*^9}, {3.699876259464749*^9, 
+  3.699876302148219*^9}, {3.699876362308885*^9, 3.699876403043744*^9}, {
+  3.6998764694700527`*^9, 3.699876507967678*^9}, {3.6998766608775883`*^9, 
+  3.699876689617798*^9}, {3.6998767467369423`*^9, 3.699876799069105*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"yankees", ",", "mets"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"yankees", ",", "diamondbacks"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"angels", ",", "giants"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"yankees", ",", "marlins"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"red", " ", "sox"}], ",", "cardinals"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"sox", " ", "white"}], ",", "astros"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"tigers", ",", "cardinals"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"red", " ", "sox"}], ",", "rockies"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"rays", ",", "phillies"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"yankees", ",", "phillies"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"rangers", ",", "giants"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"rangers", ",", "cardinals"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"tigers", ",", "giants"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"red", " ", "sox"}], ",", "cardinals"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"royals", ",", "giants"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"royals", ",", "mets"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"indians", ",", "cubs"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.6998760950197353`*^9, 3.699876134824051*^9}, 
+   3.699876303566189*^9, {3.699876366771617*^9, 3.6998764037255707`*^9}, 
+   3.6998766924261103`*^9, 3.6998768093725424`*^9}]
+}, Open  ]]
+},
+WindowSize->{615, 731},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 94, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[677, 25, 1536, 28, 202, "Input"],
+Cell[2216, 55, 1545, 43, 183, "Output"]
+}, Open  ]]
+}
+]
+*)
+
